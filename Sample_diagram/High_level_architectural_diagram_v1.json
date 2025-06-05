@@ -1,0 +1,621 @@
+{
+    "id": "ai-cms-streamlined-architecture",
+    "title": "Streamlined AI-Powered CMS Architecture",
+    "description": "Consolidated orchestration and gateway layer for AI-powered content management system",
+    "components": [
+      {
+        "id": "editor-input",
+        "type": "user",
+        "position": {
+          "x": 50,
+          "y": 70
+        },
+        "size": {
+          "width": 200,
+          "height": 80
+        },
+        "title": "Editor Input",
+        "description": "Draft Article, Rough Ideas, Refinements",
+        "connections": ["unified-orchestration"]
+      },
+      {
+        "id": "intelligent-router",
+        "type": "gateway",
+        "position": {
+          "x": 80,
+          "y": 250
+        },
+        "size": {
+          "width": 200,
+          "height": 60
+        },
+        "title": "Intelligent Router & Request Handler",
+        "description": "Input Parsing & Validation, Protocol Standardization",
+        "connections": ["agent-discovery", "editor-input"]
+      },
+      {
+        "id": "agent-discovery",
+        "type": "service",
+        "position": {
+          "x": 320,
+          "y": 250
+        },
+        "size": {
+          "width": 200,
+          "height": 60
+        },
+        "title": "Agent Discovery & Task Dispatcher",
+        "description": "Service Registry, Capability Matching",
+        "connections": ["workflow-engine", "intelligent-router"]
+      },
+      {
+        "id": "workflow-engine",
+        "type": "service",
+        "position": {
+          "x": 560,
+          "y": 250
+        },
+        "size": {
+          "width": 200,
+          "height": 60
+        },
+        "title": "Workflow Engine & Load Balancer",
+        "description": "Execution Planning, Resource Allocation",
+        "connections": ["security-gateway", "agent-discovery"]
+      },
+      {
+        "id": "security-gateway",
+        "type": "security",
+        "position": {
+          "x": 800,
+          "y": 250
+        },
+        "size": {
+          "width": 200,
+          "height": 60
+        },
+        "title": "Security & Auth Gateway",
+        "description": "Authentication, Rate Limiting",
+        "connections": ["multi-vertical-controller", "workflow-engine"]
+      },
+      {
+        "id": "multi-vertical-controller",
+        "type": "service",
+        "position": {
+          "x": 1040,
+          "y": 250
+        },
+        "size": {
+          "width": 200,
+          "height": 60
+        },
+        "title": "Multi-Vertical Controller",
+        "description": "Use Case Templates, Cross-Domain Logic",
+        "connections": ["security-gateway"]
+      },
+      {
+        "id": "state-manager",
+        "type": "monitor",
+        "position": {
+          "x": 200,
+          "y": 320
+        },
+        "size": {
+          "width": 200,
+          "height": 50
+        },
+        "title": "State Manager & Progress Tracker",
+        "description": "Real-time Status Monitoring",
+        "connections": []
+      },
+      {
+        "id": "circuit-breaker",
+        "type": "monitor",
+        "position": {
+          "x": 440,
+          "y": 320
+        },
+        "size": {
+          "width": 200,
+          "height": 50
+        },
+        "title": "Circuit Breaker & Failover Manager",
+        "description": "Error Handling & Recovery",
+        "connections": []
+      },
+      {
+        "id": "performance-monitor",
+        "type": "monitor",
+        "position": {
+          "x": 680,
+          "y": 320
+        },
+        "size": {
+          "width": 200,
+          "height": 50
+        },
+        "title": "Performance Monitor & Analytics",
+        "description": "SLA Tracking & Optimization",
+        "connections": []
+      },
+      {
+        "id": "config-manager",
+        "type": "service",
+        "position": {
+          "x": 920,
+          "y": 320
+        },
+        "size": {
+          "width": 200,
+          "height": 50
+        },
+        "title": "Configuration Manager",
+        "description": "Dynamic Scaling & Tuning",
+        "connections": []
+      },
+      {
+        "id": "research-agent",
+        "type": "ai_agent",
+        "position": {
+          "x": 80,
+          "y": 470
+        },
+        "size": {
+          "width": 180,
+          "height": 120
+        },
+        "title": "Research Agent",
+        "description": "Web Scraping, Search APIs, Data Synthesis, Authority Sources, Fact Validation",
+        "connections": ["result-merger"]
+      },
+      {
+        "id": "content-rag-agent",
+        "type": "ai_agent",
+        "position": {
+          "x": 290,
+          "y": 470
+        },
+        "size": {
+          "width": 180,
+          "height": 120
+        },
+        "title": "Content RAG Agent",
+        "description": "Vector Database, Similarity Search, Style Analysis, Performance Patterns",
+        "connections": ["result-merger"]
+      },
+      {
+        "id": "social-listening-agent",
+        "type": "ai_agent",
+        "position": {
+          "x": 500,
+          "y": 470
+        },
+        "size": {
+          "width": 180,
+          "height": 120
+        },
+        "title": "Social Listening Agent",
+        "description": "Platform APIs, Sentiment Analysis, Trend Detection, Engagement Metrics",
+        "connections": ["result-merger"]
+      },
+      {
+        "id": "infographic-agent",
+        "type": "ai_agent",
+        "position": {
+          "x": 710,
+          "y": 470
+        },
+        "size": {
+          "width": 180,
+          "height": 120
+        },
+        "title": "Infographic Generation",
+        "description": "Layout Engine, Text Optimization, Chart Generation, Visual Design",
+        "connections": ["result-merger"]
+      },
+      {
+        "id": "seo-agent",
+        "type": "ai_agent",
+        "position": {
+          "x": 920,
+          "y": 470
+        },
+        "size": {
+          "width": 180,
+          "height": 120
+        },
+        "title": "SEO/Title Optimization",
+        "description": "Title Generation, A/B Testing, Platform Specific, Keyword Optimize",
+        "connections": ["result-merger"]
+      },
+      {
+        "id": "guardrails-agent",
+        "type": "ai_agent",
+        "position": {
+          "x": 1130,
+          "y": 470
+        },
+        "size": {
+          "width": 180,
+          "height": 120
+        },
+        "title": "Guardrails System",
+        "description": "Safety Filter, Compliance Check, Brand Guidelines, Legal Validation",
+        "connections": ["result-merger"]
+      },
+      {
+        "id": "result-merger",
+        "type": "processor",
+        "position": {
+          "x": 150,
+          "y": 720
+        },
+        "size": {
+          "width": 200,
+          "height": 60
+        },
+        "title": "Result Merger & Consolidator",
+        "description": "Data Harmonization, Content Synthesis",
+        "connections": ["conflict-resolution"]
+      },
+      {
+        "id": "conflict-resolution",
+        "type": "processor",
+        "position": {
+          "x": 370,
+          "y": 720
+        },
+        "size": {
+          "width": 200,
+          "height": 60
+        },
+        "title": "Conflict Resolution",
+        "description": "Fact Verification, Source Weighting",
+        "connections": ["quality-scorer"]
+      },
+      {
+        "id": "quality-scorer",
+        "type": "processor",
+        "position": {
+          "x": 590,
+          "y": 720
+        },
+        "size": {
+          "width": 200,
+          "height": 60
+        },
+        "title": "Quality Scorer & Validator",
+        "description": "Content Quality, Technical Validation",
+        "connections": ["output-formatter"]
+      },
+      {
+        "id": "output-formatter",
+        "type": "processor",
+        "position": {
+          "x": 810,
+          "y": 720
+        },
+        "size": {
+          "width": 200,
+          "height": 60
+        },
+        "title": "Output Formatter",
+        "description": "Multi-format Export, Platform Adaptation",
+        "connections": ["enhanced-output"]
+      },
+      {
+        "id": "vector-database",
+        "type": "database",
+        "position": {
+          "x": 150,
+          "y": 890
+        },
+        "size": {
+          "width": 200,
+          "height": 40
+        },
+        "title": "Vector Database",
+        "description": "Articles & Embeddings",
+        "connections": []
+      },
+      {
+        "id": "cache-layer",
+        "type": "cache",
+        "position": {
+          "x": 380,
+          "y": 890
+        },
+        "size": {
+          "width": 200,
+          "height": 40
+        },
+        "title": "Cache Layer",
+        "description": "Redis - Results",
+        "connections": []
+      },
+      {
+        "id": "metadata-store",
+        "type": "database",
+        "position": {
+          "x": 610,
+          "y": 890
+        },
+        "size": {
+          "width": 200,
+          "height": 40
+        },
+        "title": "Metadata Store",
+        "description": "PostgreSQL",
+        "connections": []
+      },
+      {
+        "id": "file-storage",
+        "type": "storage",
+        "position": {
+          "x": 840,
+          "y": 890
+        },
+        "size": {
+          "width": 200,
+          "height": 40
+        },
+        "title": "File Storage",
+        "description": "S3 - Media Assets",
+        "connections": []
+      },
+      {
+        "id": "performance-analytics",
+        "type": "analytics",
+        "position": {
+          "x": 200,
+          "y": 1040
+        },
+        "size": {
+          "width": 180,
+          "height": 40
+        },
+        "title": "Performance Analytics",
+        "description": "Performance tracking and optimization",
+        "connections": ["intelligent-router"]
+      },
+      {
+        "id": "editor-feedback",
+        "type": "feedback",
+        "position": {
+          "x": 410,
+          "y": 1040
+        },
+        "size": {
+          "width": 180,
+          "height": 40
+        },
+        "title": "Editor Feedback Collection",
+        "description": "Human feedback integration",
+        "connections": ["intelligent-router"]
+      },
+      {
+        "id": "model-finetuning",
+        "type": "learning",
+        "position": {
+          "x": 620,
+          "y": 1040
+        },
+        "size": {
+          "width": 180,
+          "height": 40
+        },
+        "title": "Model Fine-tuning",
+        "description": "Continuous model improvement",
+        "connections": ["intelligent-router"]
+      },
+      {
+        "id": "knowledge-base-update",
+        "type": "learning",
+        "position": {
+          "x": 830,
+          "y": 1040
+        },
+        "size": {
+          "width": 180,
+          "height": 40
+        },
+        "title": "Knowledge Base Update",
+        "description": "Dynamic knowledge enhancement",
+        "connections": ["intelligent-router"]
+      },
+      {
+        "id": "enhanced-output",
+        "type": "output",
+        "position": {
+          "x": 400,
+          "y": 1150
+        },
+        "size": {
+          "width": 600,
+          "height": 120
+        },
+        "title": "Enhanced Article Output",
+        "description": "Research-backed Content, Style-optimized Copy, Social Insights, Custom Infographics, SEO-optimized Titles",
+        "connections": []
+      }
+    ],
+    "connections": [
+      {
+        "id": "c1",
+        "sourceId": "editor-input",
+        "targetId": "intelligent-router",
+        "label": "User Input",
+        "type": "data_flow"
+      },
+      {
+        "id": "c2",
+        "sourceId": "intelligent-router",
+        "targetId": "agent-discovery",
+        "label": "Parsed Request",
+        "type": "api_call"
+      },
+      {
+        "id": "c3",
+        "sourceId": "agent-discovery",
+        "targetId": "workflow-engine",
+        "label": "Agent Selection",
+        "type": "api_call"
+      },
+      {
+        "id": "c4",
+        "sourceId": "workflow-engine",
+        "targetId": "security-gateway",
+        "label": "Execution Plan",
+        "type": "api_call"
+      },
+      {
+        "id": "c5",
+        "sourceId": "security-gateway",
+        "targetId": "multi-vertical-controller",
+        "label": "Authorized Request",
+        "type": "api_call"
+      },
+      {
+        "id": "c6",
+        "sourceId": "multi-vertical-controller",
+        "targetId": "research-agent",
+        "label": "Research Task",
+        "type": "task_dispatch"
+      },
+      {
+        "id": "c7",
+        "sourceId": "multi-vertical-controller",
+        "targetId": "content-rag-agent",
+        "label": "RAG Task",
+        "type": "task_dispatch"
+      },
+      {
+        "id": "c8",
+        "sourceId": "multi-vertical-controller",
+        "targetId": "social-listening-agent",
+        "label": "Social Analysis Task",
+        "type": "task_dispatch"
+      },
+      {
+        "id": "c9",
+        "sourceId": "multi-vertical-controller",
+        "targetId": "infographic-agent",
+        "label": "Visual Generation Task",
+        "type": "task_dispatch"
+      },
+      {
+        "id": "c10",
+        "sourceId": "multi-vertical-controller",
+        "targetId": "seo-agent",
+        "label": "SEO Optimization Task",
+        "type": "task_dispatch"
+      },
+      {
+        "id": "c11",
+        "sourceId": "multi-vertical-controller",
+        "targetId": "guardrails-agent",
+        "label": "Safety Check Task",
+        "type": "task_dispatch"
+      },
+      {
+        "id": "c12",
+        "sourceId": "research-agent",
+        "targetId": "result-merger",
+        "label": "Research Results",
+        "type": "data_flow"
+      },
+      {
+        "id": "c13",
+        "sourceId": "content-rag-agent",
+        "targetId": "result-merger",
+        "label": "RAG Results",
+        "type": "data_flow"
+      },
+      {
+        "id": "c14",
+        "sourceId": "social-listening-agent",
+        "targetId": "result-merger",
+        "label": "Social Insights",
+        "type": "data_flow"
+      },
+      {
+        "id": "c15",
+        "sourceId": "infographic-agent",
+        "targetId": "result-merger",
+        "label": "Visual Elements",
+        "type": "data_flow"
+      },
+      {
+        "id": "c16",
+        "sourceId": "seo-agent",
+        "targetId": "result-merger",
+        "label": "SEO Recommendations",
+        "type": "data_flow"
+      },
+      {
+        "id": "c17",
+        "sourceId": "guardrails-agent",
+        "targetId": "result-merger",
+        "label": "Safety Validation",
+        "type": "data_flow"
+      },
+      {
+        "id": "c18",
+        "sourceId": "result-merger",
+        "targetId": "conflict-resolution",
+        "label": "Merged Results",
+        "type": "data_flow"
+      },
+      {
+        "id": "c19",
+        "sourceId": "conflict-resolution",
+        "targetId": "quality-scorer",
+        "label": "Resolved Data",
+        "type": "data_flow"
+      },
+      {
+        "id": "c20",
+        "sourceId": "quality-scorer",
+        "targetId": "output-formatter",
+        "label": "Quality Validated",
+        "type": "data_flow"
+      },
+      {
+        "id": "c21",
+        "sourceId": "output-formatter",
+        "targetId": "enhanced-output",
+        "label": "Formatted Content",
+        "type": "data_flow"
+      },
+      {
+        "id": "c22",
+        "sourceId": "performance-analytics",
+        "targetId": "intelligent-router",
+        "label": "Performance Feedback",
+        "type": "feedback_loop"
+      },
+      {
+        "id": "c23",
+        "sourceId": "editor-feedback",
+        "targetId": "intelligent-router",
+        "label": "Editor Feedback",
+        "type": "feedback_loop"
+      },
+      {
+        "id": "c24",
+        "sourceId": "model-finetuning",
+        "targetId": "intelligent-router",
+        "label": "Model Updates",
+        "type": "feedback_loop"
+      },
+      {
+        "id": "c25",
+        "sourceId": "knowledge-base-update",
+        "targetId": "intelligent-router",
+        "label": "Knowledge Updates",
+        "type": "feedback_loop"
+      }
+    ],
+    "createdAt": "2025-06-05T03:21:31.279Z",
+    "updatedAt": "2025-06-05T03:35:49.726Z"
+  }

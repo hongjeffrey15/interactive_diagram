@@ -1,0 +1,167 @@
+{
+  "id": "3e9df53c-08f7-48ab-a4eb-a64939735322",
+  "title": "New Diagram",
+  "description": "",
+  "components": [
+    {
+      "id": "1",
+      "type": "user",
+      "position": {
+        "x": 100,
+        "y": 100
+      },
+      "size": {
+        "width": 120,
+        "height": 80
+      },
+      "title": "User",
+      "description": "End user of the system",
+      "connections": [
+        "2"
+      ]
+    },
+    {
+      "id": "2",
+      "type": "gateway",
+      "position": {
+        "x": 288,
+        "y": 105
+      },
+      "size": {
+        "width": 140,
+        "height": 80
+      },
+      "title": "API Gateway",
+      "description": "Main entry point for all requests",
+      "connections": [
+        "1",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "id": "3",
+      "type": "service",
+      "position": {
+        "x": 512,
+        "y": 39
+      },
+      "size": {
+        "width": 130,
+        "height": 80
+      },
+      "title": "Auth Service",
+      "description": "Handles authentication and authorization",
+      "connections": [
+        "2",
+        "5"
+      ]
+    },
+    {
+      "id": "4",
+      "type": "service",
+      "position": {
+        "x": 504,
+        "y": 193
+      },
+      "size": {
+        "width": 130,
+        "height": 80
+      },
+      "title": "Data Service",
+      "description": "Main business logic service",
+      "connections": [
+        "2",
+        "6"
+      ]
+    },
+    {
+      "id": "5",
+      "type": "database",
+      "position": {
+        "x": 700,
+        "y": 50
+      },
+      "size": {
+        "width": 120,
+        "height": 80
+      },
+      "title": "User DB",
+      "description": "User data storage",
+      "connections": [
+        "3"
+      ]
+    },
+    {
+      "id": "6",
+      "type": "database",
+      "position": {
+        "x": 700,
+        "y": 150
+      },
+      "size": {
+        "width": 120,
+        "height": 80
+      },
+      "title": "Main DB",
+      "description": "Primary application database",
+      "connections": [
+        "4"
+      ]
+    },
+    {
+      "id": "a877b616-332f-4944-8742-c48a7f42fad5",
+      "type": "cache",
+      "position": {
+        "x": 340,
+        "y": 213
+      },
+      "size": {
+        "width": 159,
+        "height": 80
+      },
+      "title": "New cache",
+      "description": "",
+      "connections": []
+    }
+  ],
+  "connections": [
+    {
+      "id": "c1",
+      "sourceId": "1",
+      "targetId": "2",
+      "label": "HTTP Request",
+      "type": "api_call"
+    },
+    {
+      "id": "c2",
+      "sourceId": "2",
+      "targetId": "3",
+      "label": "Auth Check",
+      "type": "api_call"
+    },
+    {
+      "id": "c3",
+      "sourceId": "2",
+      "targetId": "4",
+      "label": "Business Logic",
+      "type": "api_call"
+    },
+    {
+      "id": "c4",
+      "sourceId": "3",
+      "targetId": "5",
+      "label": "User Query",
+      "type": "data_flow"
+    },
+    {
+      "id": "c5",
+      "sourceId": "4",
+      "targetId": "6",
+      "label": "Data Query",
+      "type": "data_flow"
+    }
+  ],
+  "createdAt": "2025-06-05T03:21:31.279Z",
+  "updatedAt": "2025-06-05T03:35:49.726Z"
+}
