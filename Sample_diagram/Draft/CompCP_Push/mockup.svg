@@ -1,0 +1,120 @@
+<svg width="960" height="540" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="960" height="540" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="480" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2c3e50">
+    Chrome Extension - AI Push Campaign 標題助手
+  </text>
+  
+  <!-- Browser Window Background -->
+  <rect x="50" y="50" width="860" height="470" fill="#ffffff" stroke="#dee2e6" stroke-width="2" rx="8"/>
+  <rect x="50" y="50" width="860" height="25" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" rx="8 8 0 0"/>
+  <circle cx="70" cy="62" r="4" fill="#ff5f56"/>
+  <circle cx="85" cy="62" r="4" fill="#ffbd2e"/>
+  <circle cx="100" cy="62" r="4" fill="#27ca3f"/>
+  
+  <!-- Browser Address Bar -->
+  <rect x="150" y="55" width="500" height="15" fill="#ffffff" stroke="#dee2e6" stroke-width="1" rx="8"/>
+  <text x="160" y="65" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">commcp.hk01.com/push-campaign</text>
+  
+  <!-- Extension Icon in Browser -->
+  <rect x="800" y="55" width="80" height="15" fill="#ffc107" stroke="#ffc107" stroke-width="1" rx="4"/>
+  <text x="840" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#2c3e50">🤖 Push AI 助手</text>
+  
+  <!-- Chrome Extension Popup -->
+  <rect x="620" y="80" width="280" height="420" fill="#ffffff" stroke="#007bff" stroke-width="3" rx="8"/>
+  <rect x="620" y="80" width="280" height="30" fill="#007bff" stroke="#007bff" stroke-width="1" rx="8 8 0 0"/>
+  <text x="760" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">🤖 AI Push 標題助手</text>
+  
+  <!-- Extension Content Area -->
+  <rect x="630" y="120" width="260" height="370" fill="#f8f9fa" stroke="#e9ecef" stroke-width="1" rx="5"/>
+  
+  <!-- Content Detection -->
+  <text x="640" y="140" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#2c3e50">📄 偵測到內容</text>
+  <rect x="640" y="145" width="240" height="30" fill="#e1f5fe" stroke="#0288d1" stroke-width="1" rx="3"/>
+  <text x="650" y="158" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">📰 籃球新聞：NBA季後賽分析</text>
+  <text x="650" y="168" font-family="Arial, sans-serif" font-size="7" fill="#6c757d">偵測到推送目標：運動愛好者</text>
+  
+  <!-- Target Audience Selection -->
+  <text x="640" y="190" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">🎯 目標分群：</text>
+  <rect x="640" y="195" width="110" height="16" fill="#e1f5fe" stroke="#0288d1" stroke-width="1" rx="3"/>
+  <text x="645" y="205" font-family="Arial, sans-serif" font-size="7" fill="#2c3e50">✓ LeBron 粉絲</text>
+  <rect x="760" y="195" width="110" height="16" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1" rx="3"/>
+  <text x="765" y="205" font-family="Arial, sans-serif" font-size="7" fill="#2c3e50">✓ Curry 粉絲</text>
+  
+  <!-- AI Analysis -->
+  <text x="640" y="230" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">🧠 AI 快速分析：</text>
+  <rect x="640" y="235" width="240" height="45" fill="#fff3e0" stroke="#ff9800" stroke-width="1" rx="3"/>
+  <text x="650" y="248" font-family="Arial, sans-serif" font-size="7" fill="#2c3e50">✓ 個人化策略：球員名字效果 +68%</text>
+  <text x="650" y="258" font-family="Arial, sans-serif" font-size="7" fill="#2c3e50">✓ 情感驅動：競爭懸念提升參與度</text>
+  <text x="650" y="268" font-family="Arial, sans-serif" font-size="7" fill="#2c3e50">✓ 最佳時機：賽季關鍵期，關注度高峰</text>
+  
+  <!-- Generated Titles -->
+  <text x="640" y="300" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#2c3e50">📱 AI 生成標題</text>
+  
+  <!-- Default Title -->
+  <rect x="640" y="305" width="240" height="20" fill="#e9ecef" stroke="#6c757d" stroke-width="1" rx="3"/>
+  <text x="645" y="317" font-family="Arial, sans-serif" font-size="7" fill="#2c3e50">📰 通用：NBA季後賽激戰正酣</text>
+  
+  <!-- Personalized Titles -->
+  <rect x="640" y="330" width="240" height="25" fill="#e1f5fe" stroke="#0288d1" stroke-width="2" rx="3"/>
+  <text x="645" y="342" font-family="Arial, sans-serif" font-size="7" font-weight="bold" fill="#0288d1">🏀 LeBron 粉絲版：</text>
+  <text x="645" y="352" font-family="Arial, sans-serif" font-size="7" fill="#2c3e50">LeBron為王朝而戰！能否延續傳奇？</text>
+  
+  <rect x="640" y="360" width="240" height="25" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" rx="3"/>
+  <text x="645" y="372" font-family="Arial, sans-serif" font-size="7" font-weight="bold" fill="#9c27b0">🏀 Curry 粉絲版：</text>
+  <text x="645" y="382" font-family="Arial, sans-serif" font-size="7" fill="#2c3e50">Curry王朝終結？勇士最後機會！</text>
+  
+  <!-- Push Recommendations -->
+  <text x="640" y="405" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">📊 推送建議：</text>
+  <rect x="640" y="410" width="115" height="35" fill="#d1f2eb" stroke="#00d084" stroke-width="1" rx="3"/>
+  <text x="645" y="422" font-family="Arial, sans-serif" font-size="7" fill="#2c3e50">💡 最佳時段</text>
+  <text x="645" y="432" font-family="Arial, sans-serif" font-size="7" fill="#2c3e50">晚上8-10點</text>
+  <text x="645" y="440" font-family="Arial, sans-serif" font-size="6" fill="#00d084">預期點擊率: 78%</text>
+  
+  <rect x="765" y="410" width="115" height="35" fill="#ffe6e6" stroke="#dc3545" stroke-width="1" rx="3"/>
+  <text x="770" y="422" font-family="Arial, sans-serif" font-size="7" fill="#2c3e50">⏰ 次選時段</text>
+  <text x="770" y="432" font-family="Arial, sans-serif" font-size="7" fill="#2c3e50">中午12-1點</text>
+  <text x="770" y="440" font-family="Arial, sans-serif" font-size="6" fill="#dc3545">預期點擊率: 52%</text>
+  
+  <!-- Action Buttons -->
+  <rect x="640" y="455" width="70" height="20" fill="#28a745" stroke="#28a745" stroke-width="1" rx="3"/>
+  <text x="675" y="467" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#ffffff">✓ 立即推送</text>
+  
+  <rect x="720" y="455" width="70" height="20" fill="#007bff" stroke="#007bff" stroke-width="1" rx="3"/>
+  <text x="755" y="467" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#ffffff">📅 排程推送</text>
+  
+  <rect x="800" y="455" width="70" height="20" fill="#6f42c1" stroke="#6f42c1" stroke-width="1" rx="3"/>
+  <text x="835" y="467" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#ffffff">📝 自訂編輯</text>
+  
+  <!-- Background CMS Interface (Blurred effect) -->
+  <rect x="70" y="90" width="530" height="410" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" rx="5" opacity="0.7"/>
+  <text x="90" y="115" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6c757d">📱 Comm CP - Push Campaign Manager</text>
+  
+  <!-- Simulated CMS Content (Faded) -->
+  <rect x="90" y="130" width="200" height="80" fill="#ffffff" stroke="#dee2e6" stroke-width="1" rx="3" opacity="0.6"/>
+  <text x="100" y="150" font-family="Arial, sans-serif" font-size="9" fill="#6c757d">📋 Campaign 設定</text>
+  <text x="100" y="170" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">內容類型：籃球新聞</text>
+  <text x="100" y="185" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">目標受眾：運動愛好者</text>
+  <text x="100" y="200" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">推送時間：待定</text>
+  
+  <rect x="310" y="130" width="280" height="80" fill="#ffffff" stroke="#dee2e6" stroke-width="1" rx="3" opacity="0.6"/>
+  <text x="320" y="150" font-family="Arial, sans-serif" font-size="9" fill="#6c757d">📊 歷史推送數據</text>
+  <text x="320" y="170" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">平均點擊率：3.2%</text>
+  <text x="320" y="185" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">最佳表現：8.1%（個人化標題）</text>
+  <text x="320" y="200" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">運動類內容平均：4.7%</text>
+  
+  <!-- Extension Connection Indicator -->
+  <rect x="90" y="230" width="500" height="30" fill="#d1f2eb" stroke="#00d084" stroke-width="2" rx="5" opacity="0.8"/>
+  <text x="300" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#00d084">
+    🔗 Chrome Extension 已連接 - AI 正在分析當前頁面內容...
+  </text>
+  
+  <!-- Extension Status -->
+  <rect x="630" y="485" width="250" height="15" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" rx="0 0 5 5"/>
+  <text x="635" y="495" font-family="Arial, sans-serif" font-size="7" fill="#28a745">
+    ✅ 已連接 Comm CP API | 💾 數據已同步
+  </text>
+  
+</svg>

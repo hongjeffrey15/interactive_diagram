@@ -1,0 +1,395 @@
+{
+    "version": "1.0",
+    "metadata": {
+      "title": "AI-Powered Chat UX Transformation for Media Company",
+      "description": "Simple architectural diagram showing AI transformation benefits for CEO presentation",
+      "author": "AI Transformation Team",
+      "createdAt": "2025-06-05T10:00:00.000Z",
+      "updatedAt": "2025-06-05T10:00:00.000Z",
+      "tags": [
+        "AI transformation",
+        "media company",
+        "revenue generation",
+        "user engagement"
+      ]
+    },
+    "canvas": {
+      "width": 1400,
+      "height": 900,
+      "backgroundColor": "#ffffff",
+      "gridEnabled": false,
+      "gridSize": 20,
+      "theme": "light"
+    },
+    "components": [
+      {
+        "id": "user",
+        "type": "user",
+        "title": "Website Visitors",
+        "description": "Users seeking information, deals, and content",
+        "position": {
+          "x": 100,
+          "y": 400
+        },
+        "size": {
+          "width": 120,
+          "height": 80
+        },
+        "styling": {
+          "backgroundColor": "#e8f4fd",
+          "borderColor": "#007bff",
+          "textColor": "#2c3e50",
+          "shape": "circle"
+        }
+      },
+      {
+        "id": "chat_interface",
+        "type": "api",
+        "title": "AI Chat Interface",
+        "description": "Intelligent chat powered by LLM - replaces basic search",
+        "position": {
+          "x": 350,
+          "y": 380
+        },
+        "size": {
+          "width": 140,
+          "height": 120
+        },
+        "styling": {
+          "backgroundColor": "#fff3cd",
+          "borderColor": "#ffc107",
+          "textColor": "#2c3e50",
+          "shape": "rectangle",
+          "icon": "💬"
+        }
+      },
+      {
+        "id": "llm_engine",
+        "type": "service",
+        "title": "LLM Engine",
+        "description": "Large Language Model processing user queries intelligently",
+        "position": {
+          "x": 600,
+          "y": 300
+        },
+        "size": {
+          "width": 140,
+          "height": 100
+        },
+        "styling": {
+          "backgroundColor": "#d1ecf1",
+          "borderColor": "#17a2b8",
+          "textColor": "#2c3e50",
+          "shape": "hexagon",
+          "icon": "🧠"
+        }
+      },
+      {
+        "id": "rag_system",
+        "type": "service",
+        "title": "RAG System",
+        "description": "Retrieval Augmented Generation - finds relevant content",
+        "position": {
+          "x": 850,
+          "y": 200
+        },
+        "size": {
+          "width": 140,
+          "height": 100
+        },
+        "styling": {
+          "backgroundColor": "#d4edda",
+          "borderColor": "#28a745",
+          "textColor": "#2c3e50",
+          "shape": "rectangle",
+          "icon": "🔍"
+        }
+      },
+      {
+        "id": "content_db",
+        "type": "database",
+        "title": "Content Database",
+        "description": "01Space events, articles, news corpus",
+        "position": {
+          "x": 1100,
+          "y": 150
+        },
+        "size": {
+          "width": 130,
+          "height": 90
+        },
+        "styling": {
+          "backgroundColor": "#f8d7da",
+          "borderColor": "#dc3545",
+          "textColor": "#2c3e50",
+          "shape": "rectangle",
+          "icon": "📚"
+        }
+      },
+      {
+        "id": "affiliate_links",
+        "type": "storage",
+        "title": "Affiliate & CPS Links",
+        "description": "Monetization links and partner deals",
+        "position": {
+          "x": 1100,
+          "y": 280
+        },
+        "size": {
+          "width": 130,
+          "height": 90
+        },
+        "styling": {
+          "backgroundColor": "#e2e3e5",
+          "borderColor": "#6c757d",
+          "textColor": "#2c3e50",
+          "shape": "rectangle",
+          "icon": "💰"
+        }
+      },
+      {
+        "id": "personalization",
+        "type": "service",
+        "title": "User Interest Profiling",
+        "description": "Tracks user preferences for better recommendations",
+        "position": {
+          "x": 850,
+          "y": 400
+        },
+        "size": {
+          "width": 140,
+          "height": 100
+        },
+        "styling": {
+          "backgroundColor": "#fce4ec",
+          "borderColor": "#e91e63",
+          "textColor": "#2c3e50",
+          "shape": "rectangle",
+          "icon": "👤"
+        }
+      },
+      {
+        "id": "revenue_stream_1",
+        "type": "external",
+        "title": "Deal Recommendations",
+        "description": "Personalized affiliate deals drive commission revenue",
+        "position": {
+          "x": 350,
+          "y": 600
+        },
+        "size": {
+          "width": 140,
+          "height": 100
+        },
+        "styling": {
+          "backgroundColor": "#d1f2eb",
+          "borderColor": "#00d084",
+          "textColor": "#2c3e50",
+          "shape": "rectangle",
+          "icon": "💸"
+        }
+      },
+      {
+        "id": "revenue_stream_2",
+        "type": "external",
+        "title": "Enhanced Engagement",
+        "description": "Smart summaries drive deeper reading and ad revenue",
+        "position": {
+          "x": 600,
+          "y": 600
+        },
+        "size": {
+          "width": 140,
+          "height": 100
+        },
+        "styling": {
+          "backgroundColor": "#d1f2eb",
+          "borderColor": "#00d084",
+          "textColor": "#2c3e50",
+          "shape": "rectangle",
+          "icon": "📈"
+        }
+      },
+      {
+        "id": "legacy_search",
+        "type": "service",
+        "title": "Legacy Search",
+        "description": "Basic keyword search - limited effectiveness",
+        "position": {
+          "x": 350,
+          "y": 150
+        },
+        "size": {
+          "width": 140,
+          "height": 80
+        },
+        "styling": {
+          "backgroundColor": "#f8f9fa",
+          "borderColor": "#6c757d",
+          "textColor": "#6c757d",
+          "shape": "rectangle",
+          "icon": "🔍",
+          "opacity": 0.5
+        }
+      }
+    ],
+    "connections": [
+      {
+        "id": "user_to_chat",
+        "from": "user",
+        "to": "chat_interface",
+        "type": "api_call",
+        "title": "Natural language queries",
+        "styling": {
+          "color": "#007bff",
+          "width": 3,
+          "style": "solid",
+          "arrowType": "arrow"
+        }
+      },
+      {
+        "id": "chat_to_llm",
+        "from": "chat_interface",
+        "to": "llm_engine",
+        "type": "data_flow",
+        "title": "Process queries",
+        "styling": {
+          "color": "#17a2b8",
+          "width": 3,
+          "style": "solid",
+          "arrowType": "arrow"
+        }
+      },
+      {
+        "id": "llm_to_rag",
+        "from": "llm_engine",
+        "to": "rag_system",
+        "type": "api_call",
+        "title": "Retrieve relevant content",
+        "styling": {
+          "color": "#28a745",
+          "width": 3,
+          "style": "solid",
+          "arrowType": "arrow"
+        }
+      },
+      {
+        "id": "rag_to_content",
+        "from": "rag_system",
+        "to": "content_db",
+        "type": "data_flow",
+        "title": "Search articles & events",
+        "styling": {
+          "color": "#dc3545",
+          "width": 2,
+          "style": "solid",
+          "arrowType": "arrow"
+        }
+      },
+      {
+        "id": "rag_to_affiliate",
+        "from": "rag_system",
+        "to": "affiliate_links",
+        "type": "data_flow",
+        "title": "Match deals",
+        "styling": {
+          "color": "#6c757d",
+          "width": 2,
+          "style": "solid",
+          "arrowType": "arrow"
+        }
+      },
+      {
+        "id": "llm_to_personalization",
+        "from": "llm_engine",
+        "to": "personalization",
+        "type": "data_flow",
+        "title": "User interest analysis",
+        "styling": {
+          "color": "#e91e63",
+          "width": 2,
+          "style": "solid",
+          "arrowType": "arrow"
+        }
+      },
+      {
+        "id": "chat_to_deals",
+        "from": "chat_interface",
+        "to": "revenue_stream_1",
+        "type": "generic",
+        "title": "Personalized recommendations",
+        "styling": {
+          "color": "#00d084",
+          "width": 4,
+          "style": "solid",
+          "arrowType": "arrow"
+        }
+      },
+      {
+        "id": "chat_to_engagement",
+        "from": "chat_interface",
+        "to": "revenue_stream_2",
+        "type": "generic",
+        "title": "Smart content summaries",
+        "styling": {
+          "color": "#00d084",
+          "width": 4,
+          "style": "solid",
+          "arrowType": "arrow"
+        }
+      },
+      {
+        "id": "legacy_comparison",
+        "from": "legacy_search",
+        "to": "chat_interface",
+        "type": "dependency",
+        "title": "AI replaces basic search",
+        "styling": {
+          "color": "#ffc107",
+          "width": 3,
+          "style": "dashed",
+          "arrowType": "arrow"
+        }
+      }
+    ],
+    "layout": {
+      "autoLayout": false,
+      "direction": "horizontal",
+      "spacing": {
+        "horizontal": 200,
+        "vertical": 150
+      }
+    },
+    "styling": {
+      "fonts": {
+        "primary": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+        "secondary": "Inter, sans-serif",
+        "monospace": "JetBrains Mono, 'Courier New', monospace"
+      },
+      "colors": {
+        "primary": "#007bff",
+        "secondary": "#6c757d",
+        "accent": "#28a745",
+        "background": "#ffffff",
+        "text": "#2c3e50",
+        "border": "#dee2e6",
+        "revenue": "#00d084"
+      },
+      "borderRadius": 8,
+      "shadows": true
+    },
+    "annotations": {
+      "ceo_narrative": {
+        "why_ai_helps": "AI Chat replaces basic search with intelligent conversations that understand user intent, leading to better content discovery and higher engagement rates",
+        "what_it_helps": "1) Generates commission revenue through personalized deal recommendations, 2) Increases ad revenue through enhanced content engagement via smart summaries",
+        "simple_explanation": "Instead of users struggling with basic search, they chat naturally with AI that knows our content and finds exactly what they need - plus relevant deals that earn us money"
+      },
+      "key_benefits": [
+        "Revenue Stream 1: Personalized affiliate recommendations based on user interests generate commission income",
+        "Revenue Stream 2: AI-powered content summaries keep users engaged longer, driving more ad impressions",
+        "User Experience: Natural chat interface is more intuitive than traditional search",
+        "Competitive Advantage: AI-powered personalization creates stickier user engagement"
+      ],
+      "implementation_scope": "Phase 1 focuses on chat interface with basic RAG capability, Phase 2 adds advanced personalization and deal matching"
+    }
+  }

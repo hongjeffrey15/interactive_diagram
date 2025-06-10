@@ -1,0 +1,160 @@
+<svg width="960" height="540" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="960" height="540" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="480" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    AI-Powered Content Creation Platform
+  </text>
+  
+  <!-- User Input -->
+  <g>
+    <rect x="50" y="70" width="120" height="80" fill="none" stroke="#333" stroke-width="2" rx="8"/>
+    <rect x="55" y="65" width="120" height="80" fill="none" stroke="#333" stroke-width="2" rx="8"/>
+    <rect x="60" y="60" width="120" height="80" fill="#ffffff" stroke="#333" stroke-width="2" rx="8"/>
+    <text x="120" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Content</text>
+    <text x="120" y="108" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Request</text>
+    <text x="120" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">Draft Ideas</text>
+    <text x="120" y="142" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">Requirements</text>
+  </g>
+  
+  <!-- Gateway (HK01 Style) -->
+  <rect x="250" y="85" width="80" height="50" fill="#e8e8e8" stroke="#666" stroke-width="1" rx="4"/>
+  <text x="290" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Gateway</text>
+  <text x="290" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Load Balancing</text>
+  
+  <!-- Orchestration Layer -->
+  <rect x="50" y="180" width="860" height="120" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="8,4" rx="8"/>
+  <text x="70" y="200" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">智能協調層 Intelligent Orchestration Layer</text>
+  
+  <!-- Orchestration Components -->
+  <rect x="80" y="220" width="160" height="60" fill="#f8d7da" stroke="#d1414a" stroke-width="1" rx="8"/>
+  <text x="160" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold">任務管理</text>
+  <text x="160" y="254" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Task Management</text>
+  <text x="160" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Multi-Agent Coordination</text>
+  
+  <rect x="270" y="220" width="160" height="60" fill="#f8d7da" stroke="#d1414a" stroke-width="1" rx="8"/>
+  <text x="350" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold">協調器</text>
+  <text x="350" y="254" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Orchestrator</text>
+  <text x="350" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Workflow Management</text>
+  
+  <rect x="460" y="220" width="160" height="60" fill="#f8d7da" stroke="#d1414a" stroke-width="1" rx="8"/>
+  <text x="540" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold">資源管理</text>
+  <text x="540" y="254" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Resource Management</text>
+  <text x="540" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Scaling & Optimization</text>
+  
+  <rect x="650" y="220" width="200" height="60" fill="#f8d7da" stroke="#d1414a" stroke-width="1" rx="8"/>
+  <text x="750" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold">多垂直整合</text>
+  <text x="750" y="254" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Multi-Vertical Integration</text>
+  <text x="750" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Cross-Industry Expansion</text>
+  
+  <!-- Model Layer -->
+  <rect x="50" y="330" width="860" height="100" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="8,4" rx="8"/>
+  <text x="70" y="350" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">模型層 AI Model Layer</text>
+  
+  <!-- Model Components -->
+  <rect x="80" y="365" width="150" height="50" fill="#e8e8e8" stroke="#666" stroke-width="1" rx="8"/>
+  <text x="155" y="382" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold">基礎大型語言模型</text>
+  <text x="155" y="396" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Foundation LLMs</text>
+  <text x="155" y="408" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">GPT, Claude, Gemini</text>
+  
+  <rect x="250" y="365" width="150" height="50" fill="#e8e8e8" stroke="#666" stroke-width="1" rx="8"/>
+  <text x="325" y="382" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold">專業模型</text>
+  <text x="325" y="396" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Specialized Models</text>
+  <text x="325" y="408" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Fine-tuned & Custom</text>
+  
+  <rect x="420" y="365" width="150" height="50" fill="#e8e8e8" stroke="#666" stroke-width="1" rx="8"/>
+  <text x="495" y="382" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold">模型目錄</text>
+  <text x="495" y="396" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Model Catalog</text>
+  <text x="495" y="408" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Version Management</text>
+  
+  <rect x="590" y="365" width="150" height="50" fill="#e8e8e8" stroke="#666" stroke-width="1" rx="8"/>
+  <text x="665" y="382" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold">多雲整合</text>
+  <text x="665" y="396" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Multi-Cloud LLMs</text>
+  <text x="665" y="408" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Provider Flexibility</text>
+  
+  <rect x="760" y="365" width="130" height="50" fill="#e8e8e8" stroke="#666" stroke-width="1" rx="8"/>
+  <text x="825" y="382" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold">成本優化</text>
+  <text x="825" y="396" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Cost Optimization</text>
+  <text x="825" y="408" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Resource Efficiency</text>
+  
+  <!-- Response Filtering -->
+  <rect x="730" y="70" width="180" height="90" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="8,4" rx="8"/>
+  <text x="750" y="90" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Response Filtering</text>
+  
+  <rect x="750" y="100" width="140" height="25" fill="#d4edda" stroke="#28a745" stroke-width="1" rx="4"/>
+  <text x="820" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold">Quality Validation</text>
+  
+  <rect x="750" y="130" width="140" height="25" fill="#d4edda" stroke="#28a745" stroke-width="1" rx="4"/>
+  <text x="820" y="146" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold">Content Moderation</text>
+  
+  <!-- Application Layer -->
+  <rect x="50" y="460" width="200" height="60" fill="none" stroke="#333" stroke-width="2" rx="8"/>
+  <text x="150" y="478" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold">應用程式 Applications</text>
+  <text x="150" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">CMS Content Creation</text>
+  <text x="150" y="508" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">E-commerce, Customer Service</text>
+  
+  <!-- Enhanced Output -->
+  <rect x="650" y="460" width="260" height="60" fill="#f0f8f0" stroke="#28a745" stroke-width="2" rx="8"/>
+  <text x="780" y="478" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#28a745">Enhanced Content Output</text>
+  <text x="780" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">Research-backed • SEO-optimized • Multi-format</text>
+  <text x="780" y="508" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">Brand-compliant • Performance-driven</text>
+  
+  <!-- Investment Indicators -->
+  <rect x="300" y="460" width="120" height="35" fill="#fff3cd" stroke="#ffc107" stroke-width="2" rx="4"/>
+  <text x="360" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#856404">Infrastructure</text>
+  <text x="360" y="488" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#856404">Investment Required</text>
+  
+  <rect x="450" y="460" width="120" height="35" fill="#fff3cd" stroke="#ffc107" stroke-width="2" rx="4"/>
+  <text x="510" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#856404">AI Resources</text>
+  <text x="510" y="488" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#856404">Compute & Storage</text>
+  
+  <!-- Arrows -->
+  <!-- User to Gateway -->
+  <path d="M180 110 L250 110" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Gateway to Orchestration -->
+  <path d="M290 135 L290 180" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Orchestration to Models -->
+  <path d="M480 300 L480 330" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Models to Output -->
+  <path d="M665 415 L665 450 L780 450 L780 460" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Gateway to Response Filtering -->
+  <path d="M330 110 L730 110" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Response Filtering to Output -->
+  <path d="M820 160 L820 460" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Orchestration to Applications -->
+  <!--<path d="M150 300 L150 460" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>-->
+  
+  <!-- Horizontal Expansion Arrow -->
+  <path d="M870 250 Q900 250 900 280 Q900 310 870 310" stroke="#d1414a" stroke-width="3" fill="none" stroke-dasharray="6,3" marker-end="url(#expandArrow)"/>
+  <text x="885" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d1414a">Horizontal</text>
+  <text x="885" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d1414a">Scaling</text>
+  <text x="885" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d1414a">Multiple</text>
+  <text x="885" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d1414a">Industries</text>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+    <marker id="expandArrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#d1414a"/>
+    </marker>
+  </defs>
+  
+  <!-- Key Benefits Box -->
+  <!--<rect x="50" y="15" width="300" height="45" fill="#e6f3ff" stroke="#0066cc" stroke-width="1" rx="4"/>-->
+  <!--<text x="60" y="32" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0066cc">Key Business Value:</text>-->
+  <!--<text x="60" y="46" font-family="Arial, sans-serif" font-size="11" fill="#0066cc">• 10x Content Production Speed • Multi-Industry Scalability • Cost-Effective AI Integration</text>-->
+  
+  <!-- ROI Indicator -->
+  <!--<rect x="650" y="15" width="260" height="45" fill="#f0f8f0" stroke="#28a745" stroke-width="1" rx="4"/>-->
+  <!--<text x="660" y="32" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#28a745">Expected ROI:</text>-->
+  <!--<text x="660" y="46" font-family="Arial, sans-serif" font-size="11" fill="#28a745">• 60% Cost Reduction • 5x Faster Time-to-Market • Enterprise-Grade Scalability</text>-->
+</svg>

@@ -1,0 +1,141 @@
+<svg width="960" height="540" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="960" height="540" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="480" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2c3e50">
+    智能內容管理系統 - AI 驅動核心架構
+  </text>
+  
+  <!-- Top Flow: Data Source -> Gateway -> Quality Control -> Output -->
+  <g>
+    <!-- Data Source -->
+    <rect x="40" y="70" width="100" height="60" fill="none" stroke="#333" stroke-width="2" rx="8"/>
+    <rect x="42" y="68" width="100" height="60" fill="none" stroke="#333" stroke-width="2" rx="8"/>
+    <rect x="44" y="66" width="100" height="60" fill="#ffffff" stroke="#333" stroke-width="2" rx="8"/>
+    <text x="94" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold">內容需求</text>
+    <text x="94" y="104" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">編輯指令</text>
+    <text x="94" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">草稿內容</text>
+    
+    <!-- Gateway -->
+    <rect x="180" y="85" width="80" height="30" fill="#e8e8e8" stroke="#666" stroke-width="1" rx="4"/>
+    <text x="220" y="102" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold">智能網關</text>
+    
+    <!-- Quality Control -->
+    <rect x="300" y="70" width="150" height="60" fill="#d4edda" stroke="#28a745" stroke-width="2" rx="8"/>
+    <text x="375" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#28a745">內容品質控制</text>
+    <text x="375" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">品質驗證篩選</text>
+    <text x="375" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">內容安全審核</text>
+    
+    <!-- Enhanced Output -->
+    <rect x="490" y="70" width="400" height="60" fill="#f0f8f0" stroke="#28a745" stroke-width="2" rx="8"/>
+    <text x="690" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#28a745">高品質智能內容輸出</text>
+    <text x="690" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">文章擴寫・標題優化・風格調整・SEO增強・品牌一致</text>
+  <!--  <text x="690" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Research-backed • Multi-format • Performance-driven</text>-->
+  <!--</g>-->
+  
+  <!-- Orchestration Layer -->
+  <rect x="40" y="160" width="700" height="100" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="8,4" rx="8"/>
+  <text x="50" y="180" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">智能協調層</text>
+  
+  <!-- Orchestration Components -->
+  <rect x="60" y="200" width="120" height="45" fill="#f8d7da" stroke="#d1414a" stroke-width="1" rx="6"/>
+  <text x="120" y="218" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold">多任務協調</text>
+  <text x="120" y="232" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">並行處理管理</text>
+  
+  <rect x="200" y="200" width="120" height="45" fill="#f8d7da" stroke="#d1414a" stroke-width="1" rx="6"/>
+  <text x="260" y="218" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold">工作流引擎</text>
+  <text x="260" y="232" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">智能任務分派</text>
+  
+  <rect x="340" y="200" width="120" height="45" fill="#f8d7da" stroke="#d1414a" stroke-width="1" rx="6"/>
+  <text x="400" y="218" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold">資源最佳化</text>
+  <text x="400" y="232" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">計算資源配置</text>
+  
+  <rect x="480" y="200" width="120" height="45" fill="#f8d7da" stroke="#d1414a" stroke-width="1" rx="6"/>
+  <text x="540" y="218" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold">品質監控</text>
+  <text x="540" y="232" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">即時品質保證</text>
+  
+  <rect x="620" y="200" width="100" height="45" fill="#f8d7da" stroke="#d1414a" stroke-width="1" rx="6"/>
+  <text x="670" y="218" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold">擴展能力</text>
+  <text x="670" y="232" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">跨產業適應</text>
+  
+  <!-- AI Agent Layer -->
+  <rect x="40" y="290" width="700" height="90" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="8,4" rx="8"/>
+  <text x="50" y="310" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">AI 智能代理層 - 核心功能</text>
+  
+  <!-- Core AI Agents (emphasized) -->
+  <rect x="60" y="325" width="140" height="50" fill="#e8f4fd" stroke="#007bff" stroke-width="3" rx="8"/>
+  <text x="130" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#007bff">📝 文章擴寫</text>
+  <text x="130" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">內容延伸・段落豐富化</text>
+  
+  <rect x="220" y="325" width="140" height="50" fill="#d1f2eb" stroke="#28a745" stroke-width="3" rx="8"/>
+  <text x="290" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#28a745">📰 標題優化</text>
+  <text x="290" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">SEO標題・吸睛效果</text>
+  
+  <rect x="380" y="325" width="140" height="50" fill="#e1f5fe" stroke="#17a2b8" stroke-width="3" rx="8"/>
+  <text x="450" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#17a2b8">🎨 風格轉換</text>
+  <text x="450" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">語調調整・風格置換</text>
+  
+  <!-- Supporting Agents (less emphasized) -->
+  <rect x="540" y="325" width="80" height="50" fill="#f8f9fa" stroke="#6c757d" stroke-width="1" rx="6"/>
+  <text x="580" y="342" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6c757d">研究代理</text>
+  <text x="580" y="354" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#999">資料蒐集</text>
+  
+  <rect x="640" y="325" width="80" height="50" fill="#f8f9fa" stroke="#6c757d" stroke-width="1" rx="6"/>
+  <text x="680" y="342" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6c757d">安全守護</text>
+  <text x="680" y="354" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#999">合規檢查</text>
+  
+  <!-- Model Layer -->
+  <rect x="40" y="400" width="700" height="70" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="8,4" rx="8"/>
+  <text x="50" y="420" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">AI 模型基礎層</text>
+  
+  <!-- Model Components -->
+  <rect x="60" y="435" width="110" height="25" fill="#e8e8e8" stroke="#666" stroke-width="1" rx="4"/>
+  <text x="115" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold">DeepSeek/Qwen/Gemini</text>
+  
+  <rect x="185" y="435" width="110" height="25" fill="#e8e8e8" stroke="#666" stroke-width="1" rx="4"/>
+  <text x="240" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold">專業微調模型</text>
+  
+  <rect x="310" y="435" width="110" height="25" fill="#e8e8e8" stroke="#666" stroke-width="1" rx="4"/>
+  <text x="365" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold">多雲端整合</text>
+  
+  <rect x="435" y="435" width="110" height="25" fill="#e8e8e8" stroke="#666" stroke-width="1" rx="4"/>
+  <text x="490" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold">成本優化引擎</text>
+  
+  <rect x="560" y="435" width="110" height="25" fill="#e8e8e8" stroke="#666" stroke-width="1" rx="4"/>
+  <text x="615" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold">效能監控系統</text>
+  
+  <!-- Investment Indicators -->
+  <rect x="40" y="480" width="440" height="55" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="8,4" rx="8"/>
+  <!--<text x="50" y="500" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">投資需求</text>-->
+  
+  <rect x="60" y="495" width="120" height="25" fill="#fff3cd" stroke="#ffc107" stroke-width="2" rx="4"/>
+  <text x="120" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#856404">基礎建設投資</text>
+  
+  <rect x="200" y="495" width="120" height="25" fill="#fff3cd" stroke="#ffc107" stroke-width="2" rx="4"/>
+  <text x="260" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#856404">AI 運算資源</text>
+  
+  <rect x="340" y="495" width="120" height="25" fill="#fff3cd" stroke="#ffc107" stroke-width="2" rx="4"/>
+  <text x="400" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#856404">技術團隊配置</text>
+  
+  <!-- Arrows -->
+  <path d="M144 100 L180 100" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M260 100 L300 100" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M450 100 L490 100" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <path d="M220 115 L220 160" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M390 260 L390 290" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M390 380 L390 400" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Value Proposition -->
+  <rect x="520" y="490" width="400" height="40" fill="#e6f3ff" stroke="#0066cc" stroke-width="2" rx="6"/>
+  <text x="720" y="507" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0066cc">核心價值主張</text>
+  <text x="720" y="522" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0066cc">專注核心功能・實用性優先・漸進式發展・投資回報最大化</text>
+</svg>

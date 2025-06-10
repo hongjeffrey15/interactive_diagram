@@ -1,0 +1,149 @@
+<svg width="960" height="540" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="960" height="540" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="480" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2c3e50">
+    CMS 內容創作工作流程比較
+  </text>
+  
+  <!-- BEFORE Section (Left) -->
+  <rect x="20" y="60" width="400" height="420" fill="#ffe6e6" stroke="#dc3545" stroke-width="2" rx="10"/>
+  <text x="220" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#dc3545">
+    傳統工作流程
+  </text>
+  
+  <!-- BEFORE Workflow Steps -->
+  <circle cx="80" cy="130" r="25" fill="#e8f4fd" stroke="#007bff" stroke-width="2"/>
+  <text x="80" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">✍️</text>
+  <text x="80" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">編輯</text>
+  
+  <rect x="155" y="105" width="80" height="50" fill="#f8f9fa" stroke="#6c757d" stroke-width="2" rx="8"/>
+  <text x="195" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">📝</text>
+  <text x="195" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6c757d">手動重寫</text>
+  
+  <rect x="280" y="105" width="80" height="50" fill="#fff3cd" stroke="#ffc107" stroke-width="2" rx="8"/>
+  <text x="320" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#856404">🔍</text>
+  <text x="320" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#856404">人工研究</text>
+  
+  <rect x="155" y="190" width="80" height="50" fill="#f8d7da" stroke="#dc3545" stroke-width="2" rx="8"/>
+  <text x="195" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#dc3545">🔄</text>
+  <text x="195" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#dc3545">反覆修改</text>
+  
+  <rect x="280" y="190" width="80" height="50" fill="#d4edda" stroke="#28a745" stroke-width="2" rx="8"/>
+  <text x="320" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#28a745">📤</text>
+  <text x="320" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#28a745">發佈</text>
+  
+  <!-- BEFORE Arrows -->
+  <path d="M 105 130 L 145 130" stroke="#6c757d" stroke-width="2" marker-end="url(#arrowhead-gray)"/>
+  <path d="M 235 130 L 270 130" stroke="#6c757d" stroke-width="2" marker-end="url(#arrowhead-gray)"/>
+  <path d="M 320 155 L 320 180" stroke="#6c757d" stroke-width="2" marker-end="url(#arrowhead-gray)"/>
+  <path d="M 280 215 L 245 215" stroke="#6c757d" stroke-width="2" marker-end="url(#arrowhead-gray)"/>
+  <path d="M 195 190 L 195 165" stroke="#6c757d" stroke-width="2" marker-end="url(#arrowhead-gray)"/>
+  <path d="M 235 215 L 270 215" stroke="#6c757d" stroke-width="2" marker-end="url(#arrowhead-gray)"/>
+  
+  <!-- BEFORE Problems -->
+  <rect x="50" y="280" width="320" height="120" fill="#ffffff" stroke="#dc3545" stroke-width="2" rx="8"/>
+  <text x="210" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#dc3545">
+    ❌ 傳統流程問題
+  </text>
+  <text x="60" y="330" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">
+    • 耗時費力，編輯需花大量時間手動處理
+  </text>
+  <text x="60" y="350" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">
+    • 品質不一致，依賴個人經驗和技能
+  </text>
+  <text x="60" y="370" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">
+    • 效率低下，重複性工作佔用創作時間
+  </text>
+  <text x="60" y="390" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">
+    • 研究困難，缺乏智能化輔助工具
+  </text>
+  
+  <!-- AFTER Section (Right) -->
+  <rect x="540" y="60" width="400" height="420" fill="#e6ffe6" stroke="#28a745" stroke-width="2" rx="10"/>
+  <text x="740" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#28a745">
+    AI 智能工作流程
+  </text>
+  
+  <!-- AFTER Workflow Steps -->
+  <circle cx="600" cy="130" r="25" fill="#e8f4fd" stroke="#007bff" stroke-width="2"/>
+  <text x="600" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">✍️</text>
+  <text x="600" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">編輯</text>
+  
+  <rect x="675" y="105" width="80" height="50" fill="#fff3cd" stroke="#ffc107" stroke-width="3" rx="8"/>
+  <text x="715" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">🧩</text>
+  <text x="715" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2c3e50">Chrome插件</text>
+  
+  <rect x="800" y="105" width="80" height="50" fill="#d1ecf1" stroke="#17a2b8" stroke-width="2" rx="8"/>
+  <text x="840" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">🧠</text>
+  <text x="840" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2c3e50">LLM協作</text>
+  
+  <rect x="675" y="190" width="80" height="50" fill="#e1f5fe" stroke="#0288d1" stroke-width="2" rx="8"/>
+  <text x="715" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">✨</text>
+  <text x="715" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2c3e50">智能優化</text>
+  
+  <rect x="800" y="190" width="80" height="50" fill="#d1f2eb" stroke="#00d084" stroke-width="2" rx="8"/>
+  <text x="840" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">🚀</text>
+  <text x="840" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2c3e50">快速發佈</text>
+  
+  <!-- AFTER Arrows -->
+  <path d="M 625 130 L 665 130" stroke="#007bff" stroke-width="3" marker-end="url(#arrowhead-blue)"/>
+  <path d="M 755 130 L 790 130" stroke="#28a745" stroke-width="3" marker-end="url(#arrowhead-green)"/>
+  <path d="M 840 155 L 840 180" stroke="#0288d1" stroke-width="3" marker-end="url(#arrowhead-cyan)"/>
+  <path d="M 800 215 L 765 215" stroke="#00d084" stroke-width="3" marker-end="url(#arrowhead-money)"/>
+  <path d="M 715 190 L 715 165" stroke="#ffc107" stroke-width="3" marker-end="url(#arrowhead-yellow)"/>
+  <path d="M 755 215 L 790 215" stroke="#00d084" stroke-width="3" marker-end="url(#arrowhead-money)"/>
+  
+  <!-- AFTER Benefits -->
+  <rect x="570" y="280" width="320" height="120" fill="#ffffff" stroke="#28a745" stroke-width="2" rx="8"/>
+  <text x="730" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#28a745">
+    ✅ AI 智能化效益
+  </text>
+  <text x="580" y="330" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">
+    • 高效智能，AI 自動處理重複性工作
+  </text>
+  <text x="580" y="350" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">
+    • 提升品質一致性，基於最佳實踐和數據優化
+  </text>
+  <text x="580" y="370" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">
+    • 提升效率，縮短內容創作所需時間
+  </text>
+  <text x="580" y="390" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">
+    • 智能研究助手，即時搜索、驗證和優化
+  </text>
+  
+  <!-- Transformation Arrow -->
+  <path d="M 440 270 L 520 270" stroke="#ff6b35" stroke-width="5" marker-end="url(#arrowhead-transform)"/>
+  <text x="480" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ff6b35">
+    AI 轉型
+  </text>
+  <text x="480" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ff6b35">
+    智能內容助手
+  </text>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#007bff"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#28a745"/>
+    </marker>
+    <marker id="arrowhead-cyan" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0288d1"/>
+    </marker>
+    <marker id="arrowhead-money" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00d084"/>
+    </marker>
+    <marker id="arrowhead-yellow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ffc107"/>
+    </marker>
+    <marker id="arrowhead-gray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6c757d"/>
+    </marker>
+    <marker id="arrowhead-transform" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff6b35"/>
+    </marker>
+  </defs>
+</svg>

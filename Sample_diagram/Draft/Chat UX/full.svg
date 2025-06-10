@@ -1,0 +1,221 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1600" height="900" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="800" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    AI 轉型：從基礎搜尋到智能營收引擎
+  </text>
+  
+  <!-- BEFORE Section -->
+  <rect x="50" y="70" width="450" height="280" fill="#ffe6e6" stroke="#dc3545" stroke-width="2" rx="10"/>
+  <text x="275" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#dc3545">
+    舊系統
+  </text>
+  
+  <!-- User (Before) -->
+  <circle cx="130" cy="180" r="30" fill="#e8f4fd" stroke="#007bff" stroke-width="2"/>
+  <text x="130" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">👤</text>
+  <text x="130" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">用戶</text>
+  
+  <!-- Basic Search (Before) -->
+  <rect x="210" y="155" width="100" height="50" fill="#f8f9fa" stroke="#6c757d" stroke-width="2" rx="8"/>
+  <text x="260" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6c757d">🔍</text>
+  <text x="260" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6c757d">基礎搜尋</text>
+  
+  <!-- Limited Results (Before) -->
+  <rect x="350" y="155" width="100" height="50" fill="#fff3cd" stroke="#ffc107" stroke-width="2" rx="8"/>
+  <text x="400" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#856404">📄</text>
+  <text x="400" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#856404">有限結果</text>
+  
+  <!-- Arrows (Before) -->
+  <path d="M 160 180 L 200 180" stroke="#6c757d" stroke-width="2" marker-end="url(#arrowhead-gray)"/>
+  <path d="M 310 180 L 340 180" stroke="#6c757d" stroke-width="2" marker-end="url(#arrowhead-gray)"/>
+  
+  <!-- Problems (Before) -->
+  <rect x="150" y="260" width="200" height="70" fill="#ffffff" stroke="#dc3545" stroke-width="2" rx="8"/>
+  <text x="250" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#dc3545">
+    ❌ 低互動與營收
+  </text>
+  <text x="250" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#dc3545">
+    高跳出率，錯失機會
+  </text>
+  
+  <!-- AFTER Section (Centered) -->
+  <rect x="600" y="70" width="950" height="800" fill="#e6ffe6" stroke="#28a745" stroke-width="2" rx="10"/>
+  <text x="1075" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#28a745">
+    AI 驅動營收引擎
+  </text>
+  
+  <!-- Main Flow - Evenly Distributed (4 components across the row) -->
+  <!-- User (After) - Position 1 -->
+  <circle cx="720" cy="160" r="30" fill="#e8f4fd" stroke="#007bff" stroke-width="2"/>
+  <text x="720" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">👤</text>
+  <text x="720" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">用戶輸入</text>
+  <text x="720" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">"尋找科技優惠"</text>
+  
+  <!-- AI Chat Interface with nested LLM - Position 2 (Middle) -->
+  <rect x="890" y="120" width="180" height="110" fill="#fff3cd" stroke="#ffc107" stroke-width="3" rx="12"/>
+  <text x="980" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2c3e50">💬</text>
+  <text x="980" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">AI 智能聊天</text>
+  <text x="980" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2c3e50">理解用戶意圖</text>
+  
+  <!-- Nested LLM Engine -->
+  <rect x="900" y="190" width="160" height="30" fill="#d1ecf1" stroke="#17a2b8" stroke-width="2" rx="8"/>
+  <text x="980" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2c3e50">🧠 RAG 檢索增強</text>
+  <text x="980" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#2c3e50">個人化推薦引擎</text>
+  
+  <!-- Content Processing - Position 3 -->
+  <rect x="1150" y="120" width="160" height="80" fill="#f8d7da" stroke="#dc3545" stroke-width="2" rx="8"/>
+  <text x="1230" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">📚</text>
+  <text x="1230" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">內容檢索</text>
+  <text x="1230" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2c3e50">新聞、活動、文章</text>
+  <text x="1230" y="192" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2c3e50">聯盟商品資料庫</text>
+  
+  <!-- Smart Response Generation - Position 4 -->
+  <rect x="1380" y="120" width="140" height="80" fill="#e2e3e5" stroke="#6c757d" stroke-width="2" rx="8"/>
+  <text x="1450" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">✨</text>
+  <text x="1450" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">智能回應</text>
+  <text x="1450" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2c3e50">精準推薦</text>
+  <text x="1450" y="192" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2c3e50">個人化內容</text>
+  
+  <!-- Main Flow Arrows with generous spacing -->
+  <path d="M 750 160 L 880 160" stroke="#007bff" stroke-width="4" marker-end="url(#arrowhead-blue)"/>
+  <text x="815" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#007bff">自然語言查詢</text>
+  
+  <path d="M 1070 160 L 1140 160" stroke="#28a745" stroke-width="3" marker-end="url(#arrowhead-green)"/>
+  <text x="1105" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#28a745">檢索相關內容</text>
+  
+  <path d="M 1310 160 L 1370 160" stroke="#ff6b35" stroke-width="3" marker-end="url(#arrowhead-orange)"/>
+  <text x="1340" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#ff6b35">生成回應</text>
+  
+  <!-- Back arrow from Content Processing to AI Chat -->
+  <path d="M 1150 180 Q 1120 200 1070 200" stroke="#dc3545" stroke-width="3" fill="none" marker-end="url(#arrowhead-red)"/>
+  <text x="1110" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#dc3545">回饋學習優化</text>
+  
+  <!-- Core Benefits Container (Centered) -->
+  <rect x="650" y="270" width="850" height="220" fill="#ffffff" stroke="#007bff" stroke-width="3" rx="12"/>
+  <text x="1075" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#007bff">
+    🎯 核心效益
+  </text>
+  
+  <!-- Six Core Benefits (aligned in 2x3 grid within container) -->
+  <!-- Row 1 -->
+  <rect x="680" y="320" width="240" height="60" fill="#e8f4fd" stroke="#007bff" stroke-width="2" rx="8"/>
+  <text x="800" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">⚡</text>
+  <text x="800" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#2c3e50">簡化存取</text>
+  <text x="800" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">即時精要新聞，快速捕捉興趣</text>
+  
+  <rect x="940" y="320" width="240" height="60" fill="#fce4ec" stroke="#e91e63" stroke-width="2" rx="8"/>
+  <text x="1060" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">👤</text>
+  <text x="1060" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#2c3e50">個人化入口</text>
+  <text x="1060" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">學習用戶偏好特徵，持續優化推薦</text>
+  
+  <rect x="1200" y="320" width="240" height="60" fill="#e1f5fe" stroke="#0288d1" stroke-width="2" rx="8"/>
+  <text x="1320" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">🎯</text>
+  <text x="1320" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#2c3e50">深度互動</text>
+  <text x="1320" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">動態探索，度身推薦最相關內容</text>
+  
+  <!-- Row 2 -->
+  <rect x="680" y="400" width="240" height="60" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" rx="8"/>
+  <text x="800" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">📊</text>
+  <text x="800" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#2c3e50">新接觸點</text>
+  <text x="800" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">引發深度使用，延長使用時長，降低流失率</text>
+  
+  <rect x="940" y="400" width="240" height="60" fill="#fff3e0" stroke="#ff9800" stroke-width="2" rx="8"/>
+  <text x="1060" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">🎯</text>
+  <text x="1060" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#2c3e50">意圖型分眾</text>
+  <text x="1060" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">識別具高轉換意圖的用戶，客製化行銷方案持續推銷</text>
+  
+  <rect x="1200" y="400" width="240" height="60" fill="#e8f5e8" stroke="#4caf50" stroke-width="2" rx="8"/>
+  <text x="1320" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">📈</text>
+  <text x="1320" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#2c3e50">提升留存率</text>
+  <text x="1320" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">降低跳出率，深度內容消費</text>
+  
+  <!-- Monetization Opportunities Container (Condensed) -->
+  <rect x="700" y="520" width="750" height="250" fill="#ffffff" stroke="#00d084" stroke-width="3" rx="12"/>
+  <text x="1075" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#00d084">
+    💰 變現機會
+  </text>
+  
+  <!-- Revenue Streams (2x2 layout, condensed) -->
+  <!-- Row 1 -->
+  <rect x="730" y="570" width="320" height="80" fill="#d1f2eb" stroke="#00d084" stroke-width="2" rx="8"/>
+  <text x="890" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">📢</text>
+  <text x="890" y="610" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">廣告與贊助</text>
+  <text x="740" y="625" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">• 關鍵字廣告投放，贊助搜尋結果</text>
+  <text x="740" y="637" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">• 原生贊助版塊</text>
+  
+  <rect x="1070" y="570" width="320" height="80" fill="#d1f2eb" stroke="#00d084" stroke-width="2" rx="8"/>
+  <text x="1230" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">💎</text>
+  <text x="1230" y="610" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">訂閱與高級會員</text>
+  <text x="1080" y="625" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">• 進階搜尋，個性化撮要功能</text>
+  <text x="1080" y="637" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">• 個性化週報服務</text>
+  
+  <!-- Row 2 -->
+  <rect x="730" y="670" width="320" height="80" fill="#d1f2eb" stroke="#00d084" stroke-width="2" rx="8"/>
+  <text x="890" y="690" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">📚</text>
+  <text x="890" y="710" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">內容深化整合與專題</text>
+  <text x="740" y="725" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">• 主題深度報告</text>
+  <text x="740" y="737" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">• 一次性專題付費閱讀</text>
+  
+  <rect x="1070" y="670" width="320" height="80" fill="#d1f2eb" stroke="#00d084" stroke-width="2" rx="8"/>
+  <text x="1230" y="690" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">🛒</text>
+  <text x="1230" y="710" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">電商與聯盟行銷</text>
+  <text x="1090" y="725" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">• 01Space 商品智能推薦</text>
+  <text x="1090" y="737" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">•  聯盟分潤佣金</text>
+  
+  <!-- Flow arrows from Core Benefits to Monetization -->
+  <path d="M 1075 490 L 1075 520" stroke="#00d084" stroke-width="2" marker-end="url(#arrowhead-money)"/>
+  <text x="1120" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#00d084">實現營收</text>
+  
+  <!-- Flow arrow from AI Chat to Core Benefits -->
+  <!--<path d="M 980 230 L 1075 270" stroke="#007bff" stroke-width="4" marker-end="url(#arrowhead-blue)"/>-->
+  <!--<text x="1030" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#007bff">產生效益</text>-->
+  
+  <!-- Transformation Arrow -->
+  <path d="M 520 200 L 580 200" stroke="#ff6b35" stroke-width="6" marker-end="url(#arrowhead-transform)"/>
+  <text x="550" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ff6b35">
+    AI 轉型
+  </text>
+  <text x="550" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ff6b35">
+    智能營收引擎
+  </text>
+  
+  <!-- Benefits Summary -->
+  <rect x="700" y="790" width="750" height="80" fill="#ffffff" stroke="#28a745" stroke-width="3" rx="12"/>
+  <text x="1075" y="815" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#28a745">
+    🎯 摘要：創造新營收，完善用戶特徵擷取，深化內容撮要和推薦
+  </text>
+  <text x="710" y="835" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">
+    ✅ <tspan font-weight="bold">六大核心效益：</tspan>從簡化存取到提升留存的全方位用戶體驗優化
+  </text>
+  <text x="710" y="850" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">
+    ✅ <tspan font-weight="bold">擴展營收管道：</tspan>運用 RAG 技術實現多元化變現
+  </text>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead-blue" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#007bff"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#28a745"/>
+    </marker>
+    <marker id="arrowhead-orange" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#ff6b35"/>
+    </marker>
+    <marker id="arrowhead-red" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#dc3545"/>
+    </marker>
+    <marker id="arrowhead-money" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#00d084"/>
+    </marker>
+    <marker id="arrowhead-gray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6c757d"/>
+    </marker>
+    <marker id="arrowhead-transform" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff6b35"/>
+    </marker>
+  </defs>
+</svg>

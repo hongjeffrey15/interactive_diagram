@@ -1,0 +1,319 @@
+<svg width="1400" height="1500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1400" height="1500" fill="#f8f9fa" stroke="#e9ecef" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="700" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    Streamlined AI-Powered CMS Architecture
+  </text>
+  
+  <!-- User Input Layer -->
+  <rect x="50" y="70" width="200" height="80" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="150" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1976d2">EDITOR INPUT</text>
+  <text x="150" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#1976d2">• Draft Article</text>
+  <text x="150" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#1976d2">• Rough Ideas</text>
+  <text x="150" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#1976d2">• Refinements</text>
+  
+  <!-- CONSOLIDATED ORCHESTRATION & GATEWAY LAYER -->
+  <rect x="50" y="200" width="1300" height="180" fill="#fff3e0" stroke="#f57c00" stroke-width="3" rx="5"/>
+  <text x="700" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#f57c00">UNIFIED ORCHESTRATION & GATEWAY LAYER</text>
+  
+  <!-- Top Row: Core Orchestration -->
+  <rect x="80" y="250" width="200" height="60" fill="#ffffff" stroke="#ff9800" stroke-width="2" rx="3"/>
+  <text x="180" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ff9800">Intelligent Router &</text>
+  <text x="180" y="283" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ff9800">Request Handler</text>
+  <text x="180" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">• Input Parsing & Validation</text>
+  <text x="180" y="308" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">• Protocol Standardization</text>
+  
+  <rect x="320" y="250" width="200" height="60" fill="#ffffff" stroke="#ff9800" stroke-width="2" rx="3"/>
+  <text x="420" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ff9800">Agent Discovery &</text>
+  <text x="420" y="283" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ff9800">Task Dispatcher</text>
+  <text x="420" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">• Service Registry</text>
+  <text x="420" y="308" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">• Capability Matching</text>
+  
+  <rect x="560" y="250" width="200" height="60" fill="#ffffff" stroke="#ff9800" stroke-width="2" rx="3"/>
+  <text x="660" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ff9800">Workflow Engine &</text>
+  <text x="660" y="283" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ff9800">Load Balancer</text>
+  <text x="660" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">• Execution Planning</text>
+  <text x="660" y="308" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">• Resource Allocation</text>
+  
+  <rect x="800" y="250" width="200" height="60" fill="#ffffff" stroke="#ff9800" stroke-width="2" rx="3"/>
+  <text x="900" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ff9800">Security & Auth</text>
+  <text x="900" y="283" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ff9800">Gateway</text>
+  <text x="900" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">• Authentication</text>
+  <text x="900" y="308" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">• Rate Limiting</text>
+  
+  <rect x="1040" y="250" width="200" height="60" fill="#ffffff" stroke="#ff9800" stroke-width="2" rx="3"/>
+  <text x="1140" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ff9800">Multi-Vertical</text>
+  <text x="1140" y="283" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ff9800">Controller</text>
+  <text x="1140" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">• Use Case Templates</text>
+  <text x="1140" y="308" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">• Cross-Domain Logic</text>
+  
+  <!-- Bottom Row: Execution & Monitoring -->
+  <rect x="200" y="320" width="200" height="50" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1" rx="3"/>
+  <text x="300" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#9c27b0">State Manager &</text>
+  <text x="300" y="353" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#9c27b0">Progress Tracker</text>
+  <text x="300" y="366" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Real-time Status Monitoring</text>
+  
+  <rect x="440" y="320" width="200" height="50" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1" rx="3"/>
+  <text x="540" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#9c27b0">Circuit Breaker &</text>
+  <text x="540" y="353" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#9c27b0">Failover Manager</text>
+  <text x="540" y="366" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Error Handling & Recovery</text>
+  
+  <rect x="680" y="320" width="200" height="50" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1" rx="3"/>
+  <text x="780" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#9c27b0">Performance Monitor</text>
+  <text x="780" y="353" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#9c27b0">& Analytics</text>
+  <text x="780" y="366" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">SLA Tracking & Optimization</text>
+  
+  <rect x="920" y="320" width="200" height="50" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1" rx="3"/>
+  <text x="1020" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#9c27b0">Configuration</text>
+  <text x="1020" y="353" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#9c27b0">Manager</text>
+  <text x="1020" y="366" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Dynamic Scaling & Tuning</text>
+  
+  <!-- AI Agent Execution Framework -->
+  <rect x="50" y="430" width="1300" height="200" fill="#e8f5e8" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="700" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#388e3c">AI AGENT EXECUTION FRAMEWORK</text>
+  
+  <!-- Research Agent -->
+  <rect x="80" y="470" width="180" height="120" fill="#ffffff" stroke="#4caf50" stroke-width="1" rx="3"/>
+  <text x="170" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4caf50">RESEARCH AGENT</text>
+  <text x="170" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Web Scraping</text>
+  <text x="170" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Search APIs</text>
+  <text x="170" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Data Synthesis</text>
+  <text x="170" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Authority Sources</text>
+  <text x="170" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Fact Validation</text>
+  
+  <!-- Content RAG Agent -->
+  <rect x="290" y="470" width="180" height="120" fill="#ffffff" stroke="#4caf50" stroke-width="1" rx="3"/>
+  <text x="380" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4caf50">CONTENT RAG</text>
+  <text x="380" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4caf50">AGENT</text>
+  <text x="380" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Vector Database</text>
+  <text x="380" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Similarity Search</text>
+  <text x="380" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Style Analysis</text>
+  <text x="380" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Performance Patterns</text>
+  
+  <!-- Social Listening Agent -->
+  <rect x="500" y="470" width="180" height="120" fill="#ffffff" stroke="#4caf50" stroke-width="1" rx="3"/>
+  <text x="590" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4caf50">SOCIAL LISTENING</text>
+  <text x="590" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4caf50">AGENT</text>
+  <text x="590" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Platform APIs</text>
+  <text x="590" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Sentiment Analysis</text>
+  <text x="590" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Trend Detection</text>
+  <text x="590" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Engagement Metrics</text>
+  
+  <!-- Infographic Agent -->
+  <rect x="710" y="470" width="180" height="120" fill="#ffffff" stroke="#4caf50" stroke-width="1" rx="3"/>
+  <text x="800" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4caf50">INFOGRAPHIC</text>
+  <text x="800" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4caf50">GENERATION</text>
+  <text x="800" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Layout Engine</text>
+  <text x="800" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Text Optimization</text>
+  <text x="800" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Chart Generation</text>
+  <text x="800" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Visual Design</text>
+  
+  <!-- SEO Agent -->
+  <rect x="920" y="470" width="180" height="120" fill="#ffffff" stroke="#4caf50" stroke-width="1" rx="3"/>
+  <text x="1010" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4caf50">SEO/TITLE</text>
+  <text x="1010" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4caf50">OPTIMIZATION</text>
+  <text x="1010" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Title Generation</text>
+  <text x="1010" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• A/B Testing</text>
+  <text x="1010" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Platform Specific</text>
+  <text x="1010" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Keyword Optimize</text>
+  
+  <!-- Guardrails Agent -->
+  <rect x="1130" y="470" width="180" height="120" fill="#ffffff" stroke="#4caf50" stroke-width="1" rx="3"/>
+  <text x="1220" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4caf50">GUARDRAILS</text>
+  <text x="1220" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4caf50">SYSTEM</text>
+  <text x="1220" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Safety Filter</text>
+  <text x="1220" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Compliance Check</text>
+  <text x="1220" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Brand Guidelines</text>
+  <text x="1220" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Legal Validation</text>
+  
+  <!-- Integration & Synthesis Layer -->
+  <rect x="50" y="680" width="1300" height="120" fill="#fff8e1" stroke="#ffa000" stroke-width="2" rx="5"/>
+  <text x="700" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffa000">INTEGRATION & SYNTHESIS LAYER</text>
+  
+  <!-- Result Merger -->
+  <rect x="150" y="720" width="200" height="60" fill="#ffffff" stroke="#ffb300" stroke-width="1" rx="3"/>
+  <text x="250" y="735" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffb300">Result Merger</text>
+  <text x="250" y="750" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffb300">& Consolidator</text>
+  <text x="250" y="765" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Data Harmonization</text>
+  <text x="250" y="775" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Content Synthesis</text>
+  
+  <!-- Conflict Resolution -->
+  <rect x="370" y="720" width="200" height="60" fill="#ffffff" stroke="#ffb300" stroke-width="1" rx="3"/>
+  <text x="470" y="735" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffb300">Conflict</text>
+  <text x="470" y="750" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffb300">Resolution</text>
+  <text x="470" y="765" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Fact Verification</text>
+  <text x="470" y="775" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Source Weighting</text>
+  
+  <!-- Quality Scorer -->
+  <rect x="590" y="720" width="200" height="60" fill="#ffffff" stroke="#ffb300" stroke-width="1" rx="3"/>
+  <text x="690" y="735" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffb300">Quality Scorer</text>
+  <text x="690" y="750" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffb300">& Validator</text>
+  <text x="690" y="765" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Content Quality</text>
+  <text x="690" y="775" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Technical Validation</text>
+  
+  <!-- Output Formatter -->
+  <rect x="810" y="720" width="200" height="60" fill="#ffffff" stroke="#ffb300" stroke-width="1" rx="3"/>
+  <text x="910" y="735" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffb300">Output</text>
+  <text x="910" y="750" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffb300">Formatter</text>
+  <text x="910" y="765" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Multi-format Export</text>
+  <text x="910" y="775" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Platform Adaptation</text>
+  
+  <!-- Data Persistence Layer -->
+  <rect x="50" y="850" width="1300" height="100" fill="#f1f8e9" stroke="#689f38" stroke-width="2" rx="5"/>
+  <text x="700" y="870" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#689f38">DATA PERSISTENCE LAYER</text>
+  
+  <!-- Vector Database -->
+  <rect x="150" y="890" width="200" height="40" fill="#ffffff" stroke="#8bc34a" stroke-width="1" rx="3"/>
+  <text x="250" y="905" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#8bc34a">Vector Database</text>
+  <text x="250" y="920" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">(Articles & Embeddings)</text>
+  
+  <!-- Cache Layer -->
+  <rect x="380" y="890" width="200" height="40" fill="#ffffff" stroke="#8bc34a" stroke-width="1" rx="3"/>
+  <text x="480" y="905" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#8bc34a">Cache Layer</text>
+  <text x="480" y="920" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">(Redis - Results)</text>
+  
+  <!-- Metadata Store -->
+  <rect x="610" y="890" width="200" height="40" fill="#ffffff" stroke="#8bc34a" stroke-width="1" rx="3"/>
+  <text x="710" y="905" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#8bc34a">Metadata Store</text>
+  <text x="710" y="920" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">(PostgreSQL)</text>
+  
+  <!-- File Storage -->
+  <rect x="840" y="890" width="200" height="40" fill="#ffffff" stroke="#8bc34a" stroke-width="1" rx="3"/>
+  <text x="940" y="905" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#8bc34a">File Storage</text>
+  <text x="940" y="920" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">(S3 - Media Assets)</text>
+  
+  <!-- Feedback & Learning Loop -->
+  <rect x="50" y="1000" width="1300" height="100" fill="#fce4ec" stroke="#c2185b" stroke-width="2" rx="5"/>
+  <text x="700" y="1020" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#c2185b">FEEDBACK & LEARNING LOOP</text>
+  
+  <!-- Performance Analytics -->
+  <rect x="200" y="1040" width="180" height="40" fill="#ffffff" stroke="#e91e63" stroke-width="1" rx="3"/>
+  <text x="290" y="1055" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#e91e63">Performance</text>
+  <text x="290" y="1070" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#e91e63">Analytics</text>
+  
+  <!-- Editor Feedback -->
+  <rect x="410" y="1040" width="180" height="40" fill="#ffffff" stroke="#e91e63" stroke-width="1" rx="3"/>
+  <text x="500" y="1055" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#e91e63">Editor Feedback</text>
+  <text x="500" y="1070" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#e91e63">Collection</text>
+  
+  <!-- Model Fine-tuning -->
+  <rect x="620" y="1040" width="180" height="40" fill="#ffffff" stroke="#e91e63" stroke-width="1" rx="3"/>
+  <text x="710" y="1055" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#e91e63">Model</text>
+  <text x="710" y="1070" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#e91e63">Fine-tuning</text>
+  
+  <!-- Knowledge Base Update -->
+  <rect x="830" y="1040" width="180" height="40" fill="#ffffff" stroke="#e91e63" stroke-width="1" rx="3"/>
+  <text x="920" y="1055" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#e91e63">Knowledge Base</text>
+  <text x="920" y="1070" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#e91e63">Update</text>
+  
+  <!-- Enhanced Article Output -->
+  <rect x="400" y="1150" width="600" height="120" fill="#e8f5e8" stroke="#2e7d32" stroke-width="3" rx="8"/>
+  <text x="700" y="1175" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2e7d32">ENHANCED ARTICLE OUTPUT</text>
+  <text x="700" y="1200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2e7d32">• Research-backed Content with Citations</text>
+  <text x="700" y="1215" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2e7d32">• Style-optimized Copy with Performance Insights</text>
+  <text x="700" y="1230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2e7d32">• Social Insights Integration & Trend Analysis</text>
+  <text x="700" y="1245" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2e7d32">• Custom Infographics & Visual Elements</text>
+  <text x="700" y="1260" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2e7d32">• SEO-optimized Titles & Platform-specific Variants</text>
+  
+  <!-- Multi-Vertical Use Cases -->
+  <rect x="1050" y="70" width="300" height="200" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+  <text x="1200" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#7b1fa2">MULTI-VERTICAL SUPPORT</text>
+  <text x="1200" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7b1fa2">Current: CMS Content Creation</text>
+  <text x="1200" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">Future Verticals:</text>
+  <text x="1200" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• E-commerce Product Descriptions</text>
+  <text x="1200" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Customer Service Knowledge Base</text>
+  <text x="1200" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Marketing Campaign Creation</text>
+  <text x="1200" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Legal Document Analysis</text>
+  <text x="1200" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Financial Report Generation</text>
+  <text x="1200" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Technical Documentation</text>
+  <text x="1200" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">• Educational Content</text>
+  
+  <!-- Consolidation Benefits -->
+  <rect x="350" y="70" width="250" height="100" fill="#e8f5e8" stroke="#2e7d32" stroke-width="2" rx="5"/>
+  <text x="475" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2e7d32">CONSOLIDATION BENEFITS</text>
+  <text x="475" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">✓ Eliminated Duplication</text>
+  <text x="475" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">✓ Single Point of Control</text>
+  <text x="475" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">✓ Reduced Latency</text>
+  <text x="475" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">✓ Simplified Management</text>
+  
+  <!-- Arrows -->
+  <!-- Editor to Unified Layer -->
+  <path d="M150 150 L150 200" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Unified Layer Internal Flow -->
+  <path d="M280 280 L320 280" stroke="#ff9800" stroke-width="1" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M520 280 L560 280" stroke="#ff9800" stroke-width="1" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M760 280 L800 280" stroke="#ff9800" stroke-width="1" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M1000 280 L1040 280" stroke="#ff9800" stroke-width="1" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Unified Layer to Agents -->
+  <path d="M700 380 L700 430" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Agents to Integration -->
+  <path d="M170 590 L170 680" stroke="#4caf50" stroke-width="1" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M380 590 L380 680" stroke="#4caf50" stroke-width="1" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M590 590 L590 680" stroke="#4caf50" stroke-width="1" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M800 590 L800 680" stroke="#4caf50" stroke-width="1" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M1010 590 L1010 680" stroke="#4caf50" stroke-width="1" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M1220 590 L1220 680" stroke="#4caf50" stroke-width="1" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Integration Internal Flow -->
+  <path d="M350 750 L370 750" stroke="#ffb300" stroke-width="1" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M570 750 L590 750" stroke="#ffb300" stroke-width="1" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M790 750 L810 750" stroke="#ffb300" stroke-width="1" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Integration to Data -->
+  <path d="M700 800 L700 850" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Data to Feedback -->
+  <path d="M700 950 L700 1000" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Feedback to Output -->
+  <path d="M700 1100 L700 1150" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Feedback Loop -->
+  <path d="M1000 1060 Q1250 1060 1250 300 Q1250 200 1000 200" stroke="#c2185b" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Multi-vertical connection -->
+  <path d="M1040 310 L1050 200" stroke="#7b1fa2" stroke-width="2" fill="none" stroke-dasharray="3,3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="50" y="1320" width="400" height="160" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="5"/>
+  <text x="250" y="1340" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">STREAMLINED ARCHITECTURE LEGEND</text>
+  
+  <rect x="70" y="1350" width="15" height="15" fill="#e3f2fd" stroke="#1976d2"/>
+  <text x="95" y="1362" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">User Interface Layer</text>
+  
+  <rect x="70" y="1370" width="15" height="15" fill="#fff3e0" stroke="#f57c00"/>
+  <text x="95" y="1382" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Unified Orchestration & Gateway</text>
+  
+  <rect x="70" y="1390" width="15" height="15" fill="#e8f5e8" stroke="#388e3c"/>
+  <text x="95" y="1402" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">AI Agent Framework</text>
+  
+  <rect x="70" y="1410" width="15" height="15" fill="#fff8e1" stroke="#ffa000"/>
+  <text x="95" y="1422" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Integration & Synthesis</text>
+  
+  <rect x="70" y="1430" width="15" height="15" fill="#fce4ec" stroke="#c2185b"/>
+  <text x="95" y="1442" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Learning & Feedback</text>
+  
+  <rect x="70" y="1450" width="15" height="15" fill="#f1f8e9" stroke="#689f38"/>
+  <text x="95" y="1462" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Data Persistence</text>
+  
+  <path d="M250 1355 L280 1355" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="290" y="1360" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Data Flow</text>
+  
+  <path d="M250 1375 L280 1375" stroke="#c2185b" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  <text x="290" y="1380" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Feedback Loop</text>
+  
+  <path d="M250 1395 L280 1395" stroke="#7b1fa2" stroke-width="2" stroke-dasharray="3,3" marker-end="url(#arrowhead)"/>
+  <text x="290" y="1400" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Multi-Vertical Support</text>
+</svg>

@@ -5,6 +5,7 @@ import { ComponentLibrary } from './components/ComponentLibrary';
 import { DetailPanel } from './components/DetailPanel';
 import { Toolbar } from './components/Toolbar';
 import { TabBar } from './components/TabBar';
+import { SVGImporter } from './components/SVGImporter';
 import { 
   DiagramComponent, 
   Position, 
@@ -20,6 +21,8 @@ const initialDiagram: Diagram = {
   id: uuidv4(),
   title: 'New Diagram',
   description: '',
+  backgroundColor: '#f8f9fa',
+  theme: 'light',
   components: [
     {
       id: '1',
@@ -28,7 +31,8 @@ const initialDiagram: Diagram = {
       size: { width: 120, height: 80 },
       title: 'User',
       description: 'End user of the system',
-      connections: ['2']
+      connections: ['2'],
+      children: []
     },
     {
       id: '2',
@@ -37,7 +41,8 @@ const initialDiagram: Diagram = {
       size: { width: 140, height: 80 },
       title: 'API Gateway',
       description: 'Main entry point for all requests',
-      connections: ['1', '3', '4']
+      connections: ['1', '3', '4'],
+      children: []
     },
     {
       id: '3',
@@ -46,7 +51,8 @@ const initialDiagram: Diagram = {
       size: { width: 130, height: 80 },
       title: 'Auth Service',
       description: 'Handles authentication and authorization',
-      connections: ['2', '5']
+      connections: ['2', '5'],
+      children: []
     },
     {
       id: '4',
@@ -55,7 +61,8 @@ const initialDiagram: Diagram = {
       size: { width: 130, height: 80 },
       title: 'Data Service',
       description: 'Main business logic service',
-      connections: ['2', '6']
+      connections: ['2', '6'],
+      children: []
     },
     {
       id: '5',
@@ -64,7 +71,8 @@ const initialDiagram: Diagram = {
       size: { width: 120, height: 80 },
       title: 'User DB',
       description: 'User data storage',
-      connections: ['3']
+      connections: ['3'],
+      children: []
     },
     {
       id: '6',
@@ -73,7 +81,8 @@ const initialDiagram: Diagram = {
       size: { width: 120, height: 80 },
       title: 'Main DB',
       description: 'Primary application database',
-      connections: ['4']
+      connections: ['4'],
+      children: []
     }
   ],
   connections: [
@@ -128,6 +137,7 @@ function App() {
     dimmedComponents: []
   });
   const [selectedComponentId, setSelectedComponentId] = useState<string | null>(null);
+  const [showSVGImporter, setShowSVGImporter] = useState(false);
 
   // Calculate focus state when a component is focused
   const calculateFocusState = useCallback((componentId: string | null): FocusState => {
@@ -191,15 +201,18 @@ function App() {
     ));
   }, [diagram.id]);
 
-  const handleAddComponent = useCallback((type: ComponentType, position: Position) => {
+  const handleAddComponent = useCallback((type: ComponentType, position: Position, templateData?: any) => {
     const newComponent: DiagramComponent = {
       id: uuidv4(),
       type,
       position,
       size: { width: 140, height: 80 },
-      title: `New ${type}`,
+      title: templateData?.title || `New ${type}`,
       description: '',
-      connections: []
+      connections: [],
+      children: [],
+      color: templateData?.color,
+      metadata: templateData?.metadata || {}
     };
 
     setDiagrams(prev => prev.map(d =>
@@ -214,7 +227,20 @@ function App() {
   }, [diagram.id]);
 
   const handleComponentDrop = useCallback((componentType: string, position: Position) => {
-    handleAddComponent(componentType as ComponentType, position);
+    // Check if there's template data in the data transfer
+    const event = window.event as DragEvent;
+    const templateDataString = event?.dataTransfer?.getData('templateData');
+    let templateData = null;
+    
+    if (templateDataString) {
+      try {
+        templateData = JSON.parse(templateDataString);
+      } catch (e) {
+        console.warn('Failed to parse template data:', e);
+      }
+    }
+    
+    handleAddComponent(componentType as ComponentType, position, templateData);
   }, [handleAddComponent]);
 
   const handleUpdateComponent = useCallback((componentId: string, updates: Partial<DiagramComponent>) => {
@@ -256,7 +282,24 @@ function App() {
     }
   }, [selectedComponentId, handleCanvasClick, diagram.id]);
 
-  const handleCreateConnection = useCallback((sourceId: string, targetId: string, label: string, type: ConnectionType) => {
+  const handleCreateConnection = useCallback((connection: Omit<Connection, 'id'>) => {
+    const newConnection: Connection = {
+      ...connection,
+      id: uuidv4()
+    };
+
+    setDiagrams(prev => prev.map(d =>
+      d.id === diagram.id
+        ? {
+            ...d,
+            connections: [...d.connections, newConnection],
+            updatedAt: new Date()
+          }
+        : d
+    ));
+  }, [diagram.id]);
+
+  const handleCreateConnectionFromPanel = useCallback((sourceId: string, targetId: string, label: string, type: ConnectionType) => {
     const newConnection: Connection = {
       id: uuidv4(),
       sourceId,
@@ -270,15 +313,6 @@ function App() {
         ? {
             ...d,
             connections: [...d.connections, newConnection],
-            components: d.components.map(comp => {
-              if (comp.id === sourceId) {
-                return { ...comp, connections: [...comp.connections, targetId] };
-              }
-              if (comp.id === targetId) {
-                return { ...comp, connections: [...comp.connections, sourceId] };
-              }
-              return comp;
-            }),
             updatedAt: new Date()
           }
         : d
@@ -373,6 +407,13 @@ function App() {
       img.src = url;
     }
   }, [diagram]);
+
+  const handleSVGImport = useCallback((importedDiagram: Diagram) => {
+    console.log('Importing diagram:', importedDiagram);
+    setDiagrams(prev => [...prev, importedDiagram]);
+    setActiveTabIndex(diagrams.length); // Switch to the new tab
+    console.log('Diagram imported successfully');
+  }, [diagrams.length]);
 
   const handleImportDiagram = useCallback(() => {
     const input = document.createElement('input');
@@ -490,7 +531,8 @@ function App() {
       size: { width: 140, height: 80 },
       title,
       description,
-      connections: []
+      connections: [],
+      children: []
     };
 
     setDiagrams(prev => prev.map(d =>
@@ -521,6 +563,8 @@ function App() {
       id: uuidv4(),
       title: `New Diagram ${diagrams.length + 1}`,
       description: '',
+      backgroundColor: '#f8f9fa',
+      theme: 'light',
       components: [],
       connections: [],
       createdAt: new Date(),
@@ -557,6 +601,69 @@ function App() {
     });
   }, []);
 
+  const handleSetParent = useCallback((childId: string, parentId: string | undefined) => {
+    setDiagrams(prev => prev.map(d =>
+      d.id === diagram.id
+        ? {
+            ...d,
+            components: d.components.map(comp => {
+              // Remove from old parent's children
+              if (comp.children?.includes(childId)) {
+                return {
+                  ...comp,
+                  children: comp.children.filter(id => id !== childId)
+                };
+              }
+              
+              // Update child's parent
+              if (comp.id === childId) {
+                return { ...comp, parentId };
+              }
+              
+              // Add to new parent's children
+              if (comp.id === parentId && !comp.children?.includes(childId)) {
+                return {
+                  ...comp,
+                  children: [...(comp.children || []), childId]
+                };
+              }
+              
+              return comp;
+            }),
+            updatedAt: new Date()
+          }
+        : d
+    ));
+  }, [diagram.id]);
+
+  const handleToggleCollapse = useCallback((componentId: string) => {
+    setDiagrams(prev => prev.map(d =>
+      d.id === diagram.id
+        ? {
+            ...d,
+            components: d.components.map(comp =>
+              comp.id === componentId
+                ? { ...comp, isCollapsed: !comp.isCollapsed }
+                : comp
+            ),
+            updatedAt: new Date()
+          }
+        : d
+    ));
+  }, [diagram.id]);
+
+  const handleBackgroundColorChange = useCallback((color: string) => {
+    setDiagrams(prev => prev.map(d =>
+      d.id === diagram.id
+        ? {
+            ...d,
+            backgroundColor: color,
+            updatedAt: new Date()
+          }
+        : d
+    ));
+  }, [diagram.id]);
+
   const selectedComponent = useMemo(() => 
     selectedComponentId ? (diagram.components.find(c => c.id === selectedComponentId) || null) : null
   , [selectedComponentId, diagram.components]);
@@ -567,9 +674,15 @@ function App() {
         diagramTitle={diagram.title}
         onExport={handleExportDiagram}
         onImport={handleImportDiagram}
+        onSVGImport={() => {
+          console.log('SVG Import button clicked');
+          setShowSVGImporter(true);
+        }}
         onCreateCustomComponent={handleCreateCustomComponent}
         onClearFocus={handleCanvasClick}
         onTitleChange={handleTitleChange}
+        backgroundColor={diagram.backgroundColor}
+        onBackgroundColorChange={handleBackgroundColorChange}
       />
       
       <TabBar
@@ -594,8 +707,12 @@ function App() {
             onComponentClick={handleComponentClick}
             onComponentDrag={handleComponentDrag}
             onComponentDelete={handleDeleteComponent}
-            onCanvasClick={handleCanvasClick}
             onComponentDrop={handleComponentDrop}
+            onCanvasClick={handleCanvasClick}
+            onSetParent={handleSetParent}
+            onToggleCollapse={handleToggleCollapse}
+            onConnectionCreate={handleCreateConnection}
+            backgroundColor={diagram.backgroundColor}
             width={0}
             height={0}
           />
@@ -606,11 +723,20 @@ function App() {
           connections={diagram.connections}
           allComponents={diagram.components}
           onUpdateComponent={handleUpdateComponent}
-          onCreateConnection={handleCreateConnection}
+          onCreateConnection={handleCreateConnectionFromPanel}
           onUpdateConnection={handleUpdateConnection}
           onDeleteConnection={handleDeleteConnection}
+          onSetParent={handleSetParent}
+          onToggleCollapse={handleToggleCollapse}
         />
       </div>
+      
+      {showSVGImporter && (
+        <SVGImporter
+          onImport={handleSVGImport}
+          onClose={() => setShowSVGImporter(false)}
+        />
+      )}
     </div>
   );
 }

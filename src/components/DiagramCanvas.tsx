@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState, useCallback } from 'react';
-import { DiagramComponent, Connection, Position, FocusState } from '../types/diagram';
+import { DiagramComponent, Connection, Position, FocusState, ConnectionType } from '../types/diagram';
 import { ComponentRenderer } from './ComponentRenderer';
 import { ConnectionRenderer } from './ConnectionRenderer';
 
@@ -12,6 +12,10 @@ interface DiagramCanvasProps {
   onComponentDelete: (componentId: string) => void;
   onComponentDrop?: (componentType: string, position: Position) => void;
   onCanvasClick: () => void;
+  onSetParent?: (childId: string, parentId: string | undefined) => void;
+  onToggleCollapse?: (componentId: string) => void;
+  onConnectionCreate?: (connection: Omit<Connection, 'id'>) => void;
+  backgroundColor?: string;
   width?: number;
   height?: number;
 }
@@ -25,6 +29,10 @@ export const DiagramCanvas: React.FC<DiagramCanvasProps> = ({
   onComponentDelete,
   onComponentDrop,
   onCanvasClick,
+  onSetParent,
+  onToggleCollapse,
+  onConnectionCreate,
+  backgroundColor,
   width: propWidth,
   height: propHeight
 }) => {
@@ -51,6 +59,16 @@ export const DiagramCanvas: React.FC<DiagramCanvasProps> = ({
     isPanning: false,
     startPoint: { x: 0, y: 0 },
     offset: { x: 0, y: 0 }
+  });
+
+  const [connectionState, setConnectionState] = useState<{
+    isCreating: boolean;
+    sourceId: string | null;
+    sourceDirection: 'in' | 'out' | null;
+  }>({
+    isCreating: false,
+    sourceId: null,
+    sourceDirection: null
   });
 
   const [zoom, setZoom] = useState(1);
@@ -135,10 +153,80 @@ export const DiagramCanvas: React.FC<DiagramCanvasProps> = ({
   }, [dragState.isDragging, panState.isPanning, onComponentClick]);
 
   const handleCanvasClick = useCallback((event: React.MouseEvent) => {
-    if (event.target === svgRef.current && !panState.isPanning) {
+    // Check if clicking on canvas background (not on components)
+    const target = event.target as Element;
+    const isCanvasBackground = target === svgRef.current || 
+                              target.tagName === 'rect' || 
+                              target.classList?.contains('grid-background') ||
+                              target.id === 'grid';
+    
+    if (isCanvasBackground && !panState.isPanning && !dragState.isDragging) {
       onCanvasClick();
+      // Clear connection state when clicking empty canvas
+      setConnectionState({
+        isCreating: false,
+        sourceId: null,
+        sourceDirection: null
+      });
     }
-  }, [onCanvasClick, panState.isPanning]);
+  }, [onCanvasClick, panState.isPanning, dragState.isDragging]);
+
+  const handleConnectionHandleClick = useCallback((componentId: string, direction: 'in' | 'out', event: React.MouseEvent) => {
+    event.stopPropagation();
+    
+    if (!connectionState.isCreating) {
+      // Start creating connection
+      setConnectionState({
+        isCreating: true,
+        sourceId: componentId,
+        sourceDirection: direction
+      });
+    } else if (connectionState.sourceId !== componentId && onConnectionCreate) {
+      // Complete connection
+      const sourceComponent = components.find(c => c.id === connectionState.sourceId);
+      const targetComponent = components.find(c => c.id === componentId);
+      
+      if (sourceComponent && targetComponent) {
+        // Determine connection direction based on handle directions
+        let fromId: string, toId: string;
+        
+        if (connectionState.sourceDirection === 'out' && direction === 'in') {
+          fromId = connectionState.sourceId!;
+          toId = componentId;
+        } else if (connectionState.sourceDirection === 'in' && direction === 'out') {
+          fromId = componentId;
+          toId = connectionState.sourceId!;
+        } else {
+          // Default: source -> target regardless of direction
+          fromId = connectionState.sourceId!;
+          toId = componentId;
+        }
+
+        const newConnection: Omit<Connection, 'id'> = {
+          sourceId: fromId,
+          targetId: toId,
+          label: `${sourceComponent.title} → ${targetComponent.title}`,
+          type: ConnectionType.GENERIC
+        };
+
+        onConnectionCreate(newConnection);
+      }
+
+      // Reset connection state
+      setConnectionState({
+        isCreating: false,
+        sourceId: null,
+        sourceDirection: null
+      });
+    } else {
+      // Cancel connection (clicking same component or invalid target)
+      setConnectionState({
+        isCreating: false,
+        sourceId: null,
+        sourceDirection: null
+      });
+    }
+  }, [connectionState, components, onConnectionCreate]);
 
   const handleWheel = useCallback((event: React.WheelEvent) => {
     event.preventDefault();
@@ -282,6 +370,144 @@ export const DiagramCanvas: React.FC<DiagramCanvasProps> = ({
     return () => window.removeEventListener('resize', updateDimensions);
   }, []);
 
+  const renderComponents = () => {
+    return components
+      .filter(component => !component.parentId) // Only render root components directly
+      .map(component => {
+        const isFocused = focusState.focusedComponentId === component.id;
+        const isDimmed = focusState.dimmedComponents.includes(component.id);
+        const isDragging = dragState.componentId === component.id;
+        const isConnectionSource = connectionState.sourceId === component.id;
+        const isConnectionTarget = connectionState.isCreating && connectionState.sourceId !== component.id;
+        
+        // Get children components
+        const children = components.filter(c => c.parentId === component.id);
+
+        return (
+          <ComponentRenderer
+            key={component.id}
+            component={component}
+            isFocused={isFocused || isConnectionSource}
+            isDimmed={isDimmed && !isConnectionTarget}
+            isDragging={isDragging}
+            children={children}
+            onMouseDown={(event) => handleComponentMouseDown(component.id, event)}
+            onClick={(event) => handleComponentClick(component.id, event)}
+            onDelete={onComponentDelete}
+            onConnectionHandleClick={handleConnectionHandleClick}
+          />
+        );
+      });
+  };
+
+  const renderConnectionPreview = () => {
+    if (!connectionState.isCreating || !connectionState.sourceId) return null;
+
+    const sourceComponent = components.find(c => c.id === connectionState.sourceId);
+    if (!sourceComponent) return null;
+
+    // Get all possible target components (excluding source)
+    const possibleTargets = components.filter(c => c.id !== connectionState.sourceId && !c.parentId);
+
+    return (
+      <g className="connection-preview">
+        {/* Main instruction */}
+        <rect
+          x={sourceComponent.position.x - 50}
+          y={sourceComponent.position.y - 60}
+          width={sourceComponent.size.width + 100}
+          height={40}
+          fill="rgba(255, 87, 34, 0.95)"
+          stroke="rgba(255, 87, 34, 1)"
+          strokeWidth={2}
+          rx={8}
+          style={{ filter: 'drop-shadow(0 4px 12px rgba(0,0,0,0.3))' }}
+        />
+        <text
+          x={sourceComponent.position.x + sourceComponent.size.width / 2}
+          y={sourceComponent.position.y - 35}
+          textAnchor="middle"
+          fill="white"
+          fontSize="14"
+          fontWeight="bold"
+          style={{ fontFamily: 'Inter, sans-serif' }}
+        >
+          Click a connection handle on another component
+        </text>
+        
+        {/* Pulsing indicator on source */}
+        <circle
+          cx={sourceComponent.position.x + sourceComponent.size.width / 2}
+          cy={sourceComponent.position.y - 15}
+          r="4"
+          fill="#FF5722"
+          opacity="0.8"
+        >
+          <animate
+            attributeName="r"
+            values="4;8;4"
+            dur="2s"
+            repeatCount="indefinite"
+          />
+          <animate
+            attributeName="opacity"
+            values="0.8;0.3;0.8"
+            dur="2s"
+            repeatCount="indefinite"
+          />
+        </circle>
+
+        {/* Highlight possible target components */}
+        {possibleTargets.map(target => (
+          <g key={`target-${target.id}`}>
+            <rect
+              x={target.position.x - 3}
+              y={target.position.y - 3}
+              width={target.size.width + 6}
+              height={target.size.height + 6}
+              fill="none"
+              stroke="#4CAF50"
+              strokeWidth={2}
+              strokeDasharray="5,5"
+              rx={6}
+              opacity={0.7}
+            >
+              <animate
+                attributeName="stroke-dashoffset"
+                values="0;10"
+                dur="1s"
+                repeatCount="indefinite"
+              />
+            </rect>
+            <text
+              x={target.position.x + target.size.width / 2}
+              y={target.position.y - 8}
+              textAnchor="middle"
+              fill="#4CAF50"
+              fontSize="10"
+              fontWeight="bold"
+              style={{ fontFamily: 'Inter, sans-serif' }}
+            >
+              Click handle
+            </text>
+          </g>
+        ))}
+
+        {/* Cancel instruction */}
+        <text
+          x={sourceComponent.position.x + sourceComponent.size.width / 2}
+          y={sourceComponent.position.y + sourceComponent.size.height + 25}
+          textAnchor="middle"
+          fill="#666"
+          fontSize="12"
+          style={{ fontFamily: 'Inter, sans-serif' }}
+        >
+          Click empty space to cancel
+        </text>
+      </g>
+    );
+  };
+
   return (
     <div 
       ref={containerRef}
@@ -304,7 +530,8 @@ export const DiagramCanvas: React.FC<DiagramCanvasProps> = ({
           cursor: getCursor(),
           display: 'block',
           width: '100%',
-          height: '100%'
+          height: '100%',
+          background: backgroundColor || '#f8f9fa'
         }}
       >
         {/* Grid Pattern */}
@@ -344,19 +571,11 @@ export const DiagramCanvas: React.FC<DiagramCanvasProps> = ({
 
           {/* Components Layer */}
           <g className="components-layer">
-            {components.map(component => (
-              <ComponentRenderer
-                key={component.id}
-                component={component}
-                isFocused={focusState.focusedComponentId === component.id}
-                isDimmed={focusState.dimmedComponents.includes(component.id)}
-                onMouseDown={(event) => handleComponentMouseDown(component.id, event)}
-                onClick={(event) => handleComponentClick(component.id, event)}
-                isDragging={dragState.componentId === component.id}
-                onDelete={onComponentDelete}
-              />
-            ))}
+            {renderComponents()}
           </g>
+
+          {/* Connection Preview Layer */}
+          {renderConnectionPreview()}
         </g>
       </svg>
       
